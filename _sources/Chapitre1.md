@@ -312,7 +312,7 @@ $$
     Var(Y_t) &= Var(\alpha_0 + \alpha_1 \eta_t + \alpha_2 \eta_{t-1}) &~~(t ~ \in ~\mathbb{Z})\\
      &= Var(\alpha_1 \eta_t + \alpha_2 \eta_{t-1}) &~~(t ~ \in ~\mathbb{Z})\\
     & =   \alpha_1^2  Var( \eta_t)+ \alpha_2^2 Var(\eta_{t-1})+\alpha_1 \alpha_2 Cov(\eta_t,\eta_{t-1}) &~~(t ~ \in ~\mathbb{Z})\\
-    & = (\alpha_1^2 + \alpha_2^2 + \alpha_1 \alpha_1)\sigma^2 &~~(t ~ \in ~\mathbb{Z})
+    & = (\alpha_1^2 + \alpha_2^2)\sigma^2 &~~(t ~ \in ~\mathbb{Z})
 $$
 
 $$
