@@ -1,0 +1,732 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module : Algèbre &#8212; Faculté des Sciences Juridiques Economiques et Sociales Mohammedia</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet">
+  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Welcome to your Jupyter Book" href="intro.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Faculté des Sciences Juridiques Economiques et Sociales Mohammedia</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   Welcome to your Jupyter Book
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Module : Algèbre
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/markdown.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/executablebooks/jupyter-book"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fmarkdown.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Module : Algèbre
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#professeur-jouilil-youness">
+   Professeur Jouilil Youness
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#serie-1">
+   Série 1
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#integrale-des-fonctions-en-escalier">
+   Intégrale des fonctions en escalier
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#subdivision-d-un-segment">
+     Subdivision d’un segment
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#fonctions-en-escalier">
+     Fonctions en escalier
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#integrale-d-une-fonction-en-escalier">
+     Intégrale d’une fonction en escalier
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#proprietes-de-l-integrale-des-fonctions-en-escalier">
+     Propriétés de l’intégrale des fonctions en escalier
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#fonctions-continues-par-morceaux">
+   Fonctions continues par morceaux
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#definition-exemples">
+     Definition, exemples
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#integrale-d-une-fonction-continue-par-morceaux">
+     Integrale d’une fonction continue par morceaux
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Module : Algèbre</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Module : Algèbre
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#professeur-jouilil-youness">
+   Professeur Jouilil Youness
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#serie-1">
+   Série 1
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#integrale-des-fonctions-en-escalier">
+   Intégrale des fonctions en escalier
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#subdivision-d-un-segment">
+     Subdivision d’un segment
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#fonctions-en-escalier">
+     Fonctions en escalier
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#integrale-d-une-fonction-en-escalier">
+     Intégrale d’une fonction en escalier
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#proprietes-de-l-integrale-des-fonctions-en-escalier">
+     Propriétés de l’intégrale des fonctions en escalier
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#fonctions-continues-par-morceaux">
+   Fonctions continues par morceaux
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#definition-exemples">
+     Definition, exemples
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#integrale-d-une-fonction-continue-par-morceaux">
+     Integrale d’une fonction continue par morceaux
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="section" id="module-algebre">
+<h1>Module : Algèbre<a class="headerlink" href="#module-algebre" title="Permalink to this headline">¶</a></h1>
+</div>
+<div class="section" id="professeur-jouilil-youness">
+<h1>Professeur Jouilil Youness<a class="headerlink" href="#professeur-jouilil-youness" title="Permalink to this headline">¶</a></h1>
+</div>
+<div class="section" id="serie-1">
+<h1>Série 1<a class="headerlink" href="#serie-1" title="Permalink to this headline">¶</a></h1>
+<p><span class="math notranslate nohighlight">\(a\)</span> et <span class="math notranslate nohighlight">\(b\)</span> désignent deux réels tels que <span class="math notranslate nohighlight">\(a \leq b \)</span>. Toutes    les fonctions sont supposées définies sur <span class="math notranslate nohighlight">\([a, b]\)</span> et a valeurs réelles.
+Le but de l’intégration est de définir un nombre qui, pour une fonction <span class="math notranslate nohighlight">\(f\)</span> positive sur un segment <span class="math notranslate nohighlight">\([a, b]\)</span> , mesure l’aire délimitée par sa courbe représentative, l’axe des abscisses et les deux droites d’équations <span class="math notranslate nohighlight">\(x = a\)</span> et <span class="math notranslate nohighlight">\(x = b\)</span>.
+Ce nombre sera appelé intégrale de <span class="math notranslate nohighlight">\(f\)</span> sur <span class="math notranslate nohighlight">\([a, b]\)</span> et notée :</p>
+<div class="math notranslate nohighlight">
+\[
+\int_a^b f(x)dx
+\]</div>
+</div>
+<div class="section" id="integrale-des-fonctions-en-escalier">
+<h1>Intégrale des fonctions en escalier<a class="headerlink" href="#integrale-des-fonctions-en-escalier" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="subdivision-d-un-segment">
+<h2>Subdivision d’un segment<a class="headerlink" href="#subdivision-d-un-segment" title="Permalink to this headline">¶</a></h2>
+<div class="admonition-exercice-1 admonition">
+<p class="admonition-title">Exercice 1</p>
+<ul class="simple">
+<li><p>On considère l’ensemble suivant:</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+A = X \in \mathbb{R}^4 ; (x+2y,y-z, -x+3z,-z) x,y,z \in \mathbb{R}
+\]</div>
+<p>\delta(u)=\max_{i \in [1, n]}(x_i - x_{i-1})
+$$</p>
+</div>
+<div class="admonition-exemple admonition">
+<p class="admonition-title">Exemple</p>
+<p>Une subdivision <span class="math notranslate nohighlight">\((x_i)_{i=0}^n\)</span> ou <span class="math notranslate nohighlight">\(n\)</span> un entier naturel non nul est dite a pas constant si:</p>
+<div class="math notranslate nohighlight">
+\[
+\forall i \in \{0, \ldots, n\}, x_i = a+i\dfrac{b-a}{n}
+\]</div>
+<p>Son module est <span class="math notranslate nohighlight">\(\dfrac{b-a}{n}\)</span></p>
+</div>
+<div class="admonition-definition-2 admonition">
+<p class="admonition-title">Définition 2</p>
+<p>Si <span class="math notranslate nohighlight">\(u\)</span> et <span class="math notranslate nohighlight">\(v\)</span> sont deux subdivisions de <span class="math notranslate nohighlight">\([a, b]\)</span> , on dit que <span class="math notranslate nohighlight">\(u\)</span> est plus fine que <span class="math notranslate nohighlight">\(v\)</span> si tout élément de <span class="math notranslate nohighlight">\(v\)</span> est élément de <span class="math notranslate nohighlight">\(u\)</span>.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Par définition, une subdivision est une partie finie de <span class="math notranslate nohighlight">\([a, b]\)</span> contenant <span class="math notranslate nohighlight">\(a\)</span> et <span class="math notranslate nohighlight">\(b\)</span>. Ceci dit, une subdivision <span class="math notranslate nohighlight">\(u\)</span> est plus fine qu’une autre <span class="math notranslate nohighlight">\(v\)</span> est équivaut à dire que <span class="math notranslate nohighlight">\(v \subset u\)</span>.</p>
+</div>
+<div class="admonition-proposition-1 admonition">
+<p class="admonition-title">Proposition 1</p>
+<p>Pour toutes subdivisions <span class="math notranslate nohighlight">\(u\)</span> et <span class="math notranslate nohighlight">\(v\)</span> de <span class="math notranslate nohighlight">\([a, b]\)</span> il existe une subdivision plus fine que  <span class="math notranslate nohighlight">\(u\)</span> et <span class="math notranslate nohighlight">\(v\)</span>.</p>
+</div>
+</div>
+<div class="section" id="fonctions-en-escalier">
+<h2>Fonctions en escalier<a class="headerlink" href="#fonctions-en-escalier" title="Permalink to this headline">¶</a></h2>
+<div class="admonition-definition-3 admonition">
+<p class="admonition-title">Définition 3</p>
+<p>Une fonction <span class="math notranslate nohighlight">\(\varphi\)</span> de <span class="math notranslate nohighlight">\([a,b]\)</span> dans <span class="math notranslate nohighlight">\(\mathbb{R}\)</span> est dite en escalier si l’on peut trouver une subdivision <span class="math notranslate nohighlight">\(u=(x_i)_{i=0}^n\)</span> de <span class="math notranslate nohighlight">\([a, b]\)</span> telle que <span class="math notranslate nohighlight">\(\varphi\)</span> soit constante sur chacun des intervalles <span class="math notranslate nohighlight">\(]x_{i-1}, x_i[, (1\leq i \leq n)\)</span>.
+La subdivision <span class="math notranslate nohighlight">\(u\)</span> est dite adaptée à la fonction <span class="math notranslate nohighlight">\(\varphi\)</span>.</p>
+</div>
+<div class="admonition-exemples admonition">
+<p class="admonition-title">Exemples</p>
+<ul class="simple">
+<li><p>Une fonction constante sur l’intervalle <span class="math notranslate nohighlight">\([a,b]\)</span> est une fonction en escalier sur <span class="math notranslate nohighlight">\([a,b]\)</span>.</p></li>
+<li><p>La fonction <em>partie entière</em> est une fonction en escalier sur segment <span class="math notranslate nohighlight">\([a,b]\)</span> (pensez à une subdivision adaptée!).</p></li>
+</ul>
+</div>
+<p><strong>Remarques</strong>:</p>
+<ol class="simple">
+<li><p>Une fonction en escalier prend un nombre fini de valeurs. En particulier, elle est bornée.</p></li>
+<li><p>Si <span class="math notranslate nohighlight">\(u\)</span> est une subdivision adaptée à une fonction <span class="math notranslate nohighlight">\(\varphi\)</span> en escalier, alors toute subdivision plus fine que <span class="math notranslate nohighlight">\(u\)</span> est adaptée à <span class="math notranslate nohighlight">\(\varphi\)</span>.</p></li>
+<li><p>Si <span class="math notranslate nohighlight">\(\varphi\)</span> et <span class="math notranslate nohighlight">\(\psi\)</span> sont deux fonctions en escalier sur <span class="math notranslate nohighlight">\([a. b]\)</span>, alors il existe une subdivision adaptée à <span class="math notranslate nohighlight">\(\varphi\)</span> et <span class="math notranslate nohighlight">\(\psi\)</span>.</p></li>
+</ol>
+<div class="admonition-proposition-2 admonition">
+<p class="admonition-title">Proposition 2</p>
+<p>L’ensemble des fonctions en escalier sur <span class="math notranslate nohighlight">\([a, b]\)</span> est un sous-espace vectoriel de l’espace des fonctions définies sur <span class="math notranslate nohighlight">\([a, b]\)</span></p>
+</div>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>Penser à utiliser la proposition 1!</p>
+</div>
+<div class="dropdown admonition">
+<p class="admonition-title">Demontsration</p>
+<p>Soient <span class="math notranslate nohighlight">\(\varphi\)</span> et <span class="math notranslate nohighlight">\(\psi\)</span> deux fonctions en escalier sur <span class="math notranslate nohighlight">\([a, b]\)</span>.</p>
+<p>Soient <span class="math notranslate nohighlight">\(\lambda\)</span> et <span class="math notranslate nohighlight">\(\mu\)</span> deux réels.</p>
+<p>D’après la proposition 1 il existe une subdivision <span class="math notranslate nohighlight">\(u=(x_i)_{i=0}^n\)</span> adaptées à <span class="math notranslate nohighlight">\(\varphi\)</span> et <span class="math notranslate nohighlight">\(\psi\)</span>.
+Donc les deux fonctions sont constantes sur <span class="math notranslate nohighlight">\(]x_{i-1}, x_{i}[\)</span>
+Il en est de même pour <span class="math notranslate nohighlight">\(\lambda \varphi + \mu \psi\)</span> (constante sur <span class="math notranslate nohighlight">\(]x_{i-1}, x_{i}[\)</span>).
+Donc, <span class="math notranslate nohighlight">\(u\)</span> est une subdivision adaptée pour <span class="math notranslate nohighlight">\(\lambda \varphi + \mu \psi\)</span> qui est par la suite une fonction en escalier.</p>
+<p>Les autres conditions sont faciles à vérifier !</p>
+</div>
+</div>
+<div class="section" id="integrale-d-une-fonction-en-escalier">
+<h2>Intégrale d’une fonction en escalier<a class="headerlink" href="#integrale-d-une-fonction-en-escalier" title="Permalink to this headline">¶</a></h2>
+<div class="admonition-proposition-3 admonition">
+<p class="admonition-title">Proposition 3</p>
+<p>Soit <span class="math notranslate nohighlight">\(\varphi\)</span> une fonction en escalier sur <span class="math notranslate nohighlight">\([a, b]\)</span> et <span class="math notranslate nohighlight">\(u=(x_i)_{i=0}^n\)</span> une subdivision  adaptées à <span class="math notranslate nohighlight">\(\varphi\)</span>. Soit <span class="math notranslate nohighlight">\(c_i\)</span> la valeur prise par <span class="math notranslate nohighlight">\(\varphi\)</span> sur <span class="math notranslate nohighlight">\(]x_{i-1}, x_i[\)</span> pour <span class="math notranslate nohighlight">\(i \in \{1, \ldots, n\}\)</span> (i.e <span class="math notranslate nohighlight">\(\varphi(x)=c_i\)</span> pour tout <span class="math notranslate nohighlight">\(x \in ]x_{i-1}, x_i[\)</span>). Alors la quantité</p>
+<div class="math notranslate nohighlight">
+\[
+\sum_{i=1}^nc_i(x_i-x_{i-1})
+\]</div>
+<p>ne dépend pas de la subdivision choisie.</p>
+<p>Cette quantité s’appelle <code class="docutils literal notranslate"><span class="pre">l'intégrale</span></code> de <span class="math notranslate nohighlight">\(\varphi\)</span> sur  <span class="math notranslate nohighlight">\([a, b]\)</span> et on le note:</p>
+<div class="math notranslate nohighlight">
+\[
+\int_a^b \varphi(x)dx=\int_{[a, b]}\varphi
+\]</div>
+</div>
+<div class="dropdown admonition">
+<p class="admonition-title">Demonstration</p>
+<p>Pour toute <span class="math notranslate nohighlight">\(u\)</span> une subdivision adaptée à la fonction <span class="math notranslate nohighlight">\(\varphi\)</span>, on note</p>
+<div class="math notranslate nohighlight">
+\[
+I(\varphi, u)= \sum_{i=1}^nc_i(x_i-x_{i-1})
+\]</div>
+<p>Le but est de montrer que <span class="math notranslate nohighlight">\(\forall u, v\)</span> subdivision adaptée à <span class="math notranslate nohighlight">\(\varphi\)</span>, <span class="math notranslate nohighlight">\(I(\varphi, u)=I(\varphi, v)\)</span></p>
+<ul class="simple">
+<li><p>Si <span class="math notranslate nohighlight">\(v\)</span> est plus fine que <span class="math notranslate nohighlight">\(u\)</span>,
+Elle est obtenue en rajoutant un nombre fini d’éléments à la subdivision <span class="math notranslate nohighlight">\(u\)</span>. Pour démontrer que <span class="math notranslate nohighlight">\(I(\varphi, u)=I(\varphi, v)\)</span>, il suffit de le démontrer dans le cas où  <span class="math notranslate nohighlight">\(v\)</span> a un élément de plus que <span class="math notranslate nohighlight">\(u\)</span>.</p></li>
+</ul>
+<p>Soit donc <span class="math notranslate nohighlight">\(u=(x_i)_{i=0}^n\)</span> et <span class="math notranslate nohighlight">\(v=(x_1, \ldots, x_p, y, x_{p+1}, \ldots, x_n)\)</span></p>
+<p>Il est claire que la fonction <span class="math notranslate nohighlight">\(\varphi\)</span> sur <span class="math notranslate nohighlight">\(]x_p, y[\)</span> et <span class="math notranslate nohighlight">\(]y, x_{p+1}[\)</span>. Donc :</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{aligned}
+I(\varphi, v) &amp; =  \sum_{i=1}^{p-1}c_i(x_i-x_{i-1})+c_p(y-x_p) + c_p(x_{p+1}-y) + \sum_{i=p+2}^{n}c_i(x_i-x_{i-1})  \\ \\
+ &amp; =  \sum_{i=1}^{n}c_i(x_i-x_{i-1}) = I(\varphi, u) 
+\end{aligned}
+\end{split}\]</div>
+<ul class="simple">
+<li><p>Dans le cas général:</p></li>
+</ul>
+<p>D’après la proposition 1, il existe une subdivision <span class="math notranslate nohighlight">\(w\)</span> plus fine que <span class="math notranslate nohighlight">\(u\)</span> et <span class="math notranslate nohighlight">\(v\)</span>, cette subdivision est aussi adaptée à <span class="math notranslate nohighlight">\(\varphi\)</span> (remarque 2).
+Donc on aura d’une part <span class="math notranslate nohighlight">\(I(\varphi, w)=I(\varphi, u)\)</span> et d’autre part <span class="math notranslate nohighlight">\(I(\varphi, w)=I(\varphi, v)\)</span>.</p>
+<p>Par conséquent,</p>
+<div class="math notranslate nohighlight">
+\[
+I(\varphi, v)=I(\varphi, u)
+\]</div>
+</div>
+</div>
+<div class="section" id="proprietes-de-l-integrale-des-fonctions-en-escalier">
+<h2>Propriétés de l’intégrale des fonctions en escalier<a class="headerlink" href="#proprietes-de-l-integrale-des-fonctions-en-escalier" title="Permalink to this headline">¶</a></h2>
+<p>Dans ce qui suit on va noter l’ensemble des fonctions en escalier sur <span class="math notranslate nohighlight">\([a, b]\)</span> par <span class="math notranslate nohighlight">\(\mathcal{E}([a, b])\)</span>.</p>
+<div class="admonition-proposition-4 admonition">
+<p class="admonition-title">Proposition 4</p>
+<p>Montrer que :</p>
+<p>1- pour toutes fonctions en escalier sur <span class="math notranslate nohighlight">\([a, b]\)</span> <span class="math notranslate nohighlight">\(\varphi\)</span> et <span class="math notranslate nohighlight">\(\psi\)</span>, et pour tous réels <span class="math notranslate nohighlight">\(\alpha\)</span> et <span class="math notranslate nohighlight">\(\beta\)</span> nous avons:</p>
+<div class="math notranslate nohighlight">
+\[
+\int_{[a, b]}\alpha\varphi + \beta\psi = \alpha\int_{[a, b]}\varphi + \beta\int_{[a, b]}\psi
+\]</div>
+<p>2- une fonction en escalier positive a une intégrale positive.</p>
+<p>3- si  <span class="math notranslate nohighlight">\(\varphi\)</span> et <span class="math notranslate nohighlight">\(\psi\)</span> sont deux fonctions en escalier sur <span class="math notranslate nohighlight">\([a, b]\)</span> alors:</p>
+<div class="math notranslate nohighlight">
+\[
+\varphi \leq \psi \Rightarrow  \int_{[a, b]}\varphi \leq \int_{[a, b]}\psi
+\]</div>
+</div>
+<div class="dropdown admonition">
+<p class="admonition-title">Démonstration</p>
+<p>1-</p>
+<p>Soient <span class="math notranslate nohighlight">\(\varphi\)</span> et <span class="math notranslate nohighlight">\(\psi\)</span> deux fonctions en escalier sur <span class="math notranslate nohighlight">\([a, b]\)</span> et <span class="math notranslate nohighlight">\(\alpha\)</span> et <span class="math notranslate nohighlight">\(\beta\)</span> deux réels.</p>
+<p>Soit <span class="math notranslate nohighlight">\(u=(x_i)_{i=0}^n\)</span> une subdivision adaptée à  <span class="math notranslate nohighlight">\(\varphi\)</span> et <span class="math notranslate nohighlight">\(\psi\)</span>. Si, pour <span class="math notranslate nohighlight">\(i \in \{1, \ldots, n\}\)</span>, <span class="math notranslate nohighlight">\(c_i\)</span> et <span class="math notranslate nohighlight">\(d_i\)</span> sont respectivement les valeurs prises par <span class="math notranslate nohighlight">\(\varphi\)</span> et <span class="math notranslate nohighlight">\(\psi\)</span> sur <span class="math notranslate nohighlight">\(]x_{i-1}, x_i[\)</span> alors <span class="math notranslate nohighlight">\(\alpha\varphi + \beta\psi\)</span> est une fonction en escalier qui prend <span class="math notranslate nohighlight">\(\alpha c_i + \beta d_i\)</span> sur <span class="math notranslate nohighlight">\(]x_{i-1}, x_i[\)</span>.</p>
+<p>Nous avons donc,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{aligned}
+\int_{[a, b]}\alpha\varphi + \beta\psi &amp; = \sum_{i=1}^{n}(\alpha c_i + \beta d_i)(x_i-x_{i-1})   \\ \\
+ &amp; =  \alpha\sum_{i=1}^{n} c_i(x_i-x_{i-1}) +  \alpha\sum_{i=1}^{n} d_i(x_i-x_{i-1}) \\ \\
+ &amp; = \alpha\int_{[a, b]}\varphi + \beta\int_{[a, b]}\psi
+\end{aligned}
+\end{split}\]</div>
+<p>2-</p>
+<p>Soit <span class="math notranslate nohighlight">\(\varphi\)</span> une fonction en escalier sur <span class="math notranslate nohighlight">\([a, b]\)</span> qui est positive et  <span class="math notranslate nohighlight">\(u=(x_i)_{i=0}^n\)</span> une subdivision adaptée à <span class="math notranslate nohighlight">\(\varphi\)</span>. Puisqu’elle est positive, les valeurs <span class="math notranslate nohighlight">\(c_i\)</span> prise par <span class="math notranslate nohighlight">\(\varphi\)</span> sont positives. D’autre part, puisque pour tout <span class="math notranslate nohighlight">\(i \in \{1, \ldots, n\}, x_{i-1} \leq x_i\)</span> (par définition de la subdivision) alors <span class="math notranslate nohighlight">\(\int_{[a, b]}\varphi = \sum_{i=1}^{n} c_i(x_i-x_{i-1}) \geq 0\)</span>.</p>
+<p>3-</p>
+<p>La fonction <span class="math notranslate nohighlight">\(\varphi - \psi\)</span> est une fonction en escalier positive donc son intégral est positive.</p>
+</div>
+<div class="admonition-proposition-5 admonition">
+<p class="admonition-title">Proposition 5</p>
+<p>Une fonction <span class="math notranslate nohighlight">\(\varphi\)</span> est en escalier sur <span class="math notranslate nohighlight">\([a, b]\)</span> si et seulement si pour tout <span class="math notranslate nohighlight">\(c \in ]a, b[\)</span>, ses restrictions sur <span class="math notranslate nohighlight">\(]a, c[\)</span> et <span class="math notranslate nohighlight">\(]c, b[\)</span> le sont. Le cas échéant,</p>
+<div class="math notranslate nohighlight">
+\[
+\int_{[a, b]}\varphi = \int_{[a, c]}\varphi_{|[a, c]} + \int_{[c, b]}\varphi_{|[c, b]}
+\]</div>
+</div>
+<div class="dropdown admonition">
+<p class="admonition-title">Démonstration</p>
+<ul>
+<li><p><span class="math notranslate nohighlight">\(\Rightarrow\)</span>
+Soit <span class="math notranslate nohighlight">\(\varphi\)</span> une fonction en escalier sur <span class="math notranslate nohighlight">\([a, b]\)</span> et <span class="math notranslate nohighlight">\(u\)</span> une subdivision adaptée à <span class="math notranslate nohighlight">\(\varphi\)</span>. On ajoutant <span class="math notranslate nohighlight">\(c\)</span> a la subdivision <span class="math notranslate nohighlight">\(u\)</span> on obtient un subdivision <span class="math notranslate nohighlight">\(v=(x_i)_{i=0}^n\)</span> qui est encore adaptée à <span class="math notranslate nohighlight">\(\varphi\)</span>. Soit <span class="math notranslate nohighlight">\(p\)</span> l’entier naturel tel que <span class="math notranslate nohighlight">\(c=x_p\)</span>. Alors nous avons :</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\((x_1, \ldots, x_p)\)</span> une subdivision de  <span class="math notranslate nohighlight">\([a, c]\)</span> et puisque <span class="math notranslate nohighlight">\(\varphi\)</span> est constante sur chaque <span class="math notranslate nohighlight">\(]x_{i-1}, x_{i}[\)</span> donc <span class="math notranslate nohighlight">\(\varphi_{|[a, c]}\)</span> est fonction en escalier sur <span class="math notranslate nohighlight">\([a, c]\)</span>. Nous avons donc :</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+    \int_{[a, c]}\varphi_{|[a, c]} = \sum_{i=1}^{p} c_i(x_i-x_{i-1})
+    \]</div>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\((x_{p+1}, \ldots, x_n)\)</span> une subdivision de  <span class="math notranslate nohighlight">\([c, b]\)</span> et puisque <span class="math notranslate nohighlight">\(\varphi\)</span> est constante sur chaque <span class="math notranslate nohighlight">\(]x_{i-1}, x_{i}[\)</span> donc <span class="math notranslate nohighlight">\(\varphi_{|[c, b]}\)</span> est fonction en escalier sur <span class="math notranslate nohighlight">\([c, b]\)</span>. Nous avons donc :</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+    \int_{[c, b]}\varphi_{|[c, b]} = \sum_{i=1}^{p} c_i(x_i-x_{i-1})
+    \]</div>
+<p>Par suite :</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{aligned}
+    \int_{[a, b]}\varphi &amp;= \sum_{i=1}^{n} c_i(x_i-x_{i-1})=\sum_{i=1}^{p} c_i(x_i-x_{i-1}) + \sum_{i=p+1}^{n} c_i(x_i-x_{i-1}) \\ \\ 
+     &amp;= int_{[a, c]}\varphi_{|[a, c]} + \int_{[c, b]}\varphi_{|[c, b]}
+    \end{aligned}
+    \end{split}\]</div>
+</li>
+</ul>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\Leftarrow\)</span>
+Supposons que <span class="math notranslate nohighlight">\(\varphi_{|[a, c]}\)</span> et <span class="math notranslate nohighlight">\(\varphi_{|[c, b]}\)</span> sont en escalier sur <span class="math notranslate nohighlight">\([a, c]\)</span> et <span class="math notranslate nohighlight">\([c, b]\)</span> respectivement.</p></li>
+</ul>
+<p>Soit <span class="math notranslate nohighlight">\(u=(x_i)_{i=0}^p\)</span> (respectivement <span class="math notranslate nohighlight">\(v= (x_i)_{i=0}^q\)</span>) une subdivision de <span class="math notranslate nohighlight">\([a, c]\)</span> (respectivement de <span class="math notranslate nohighlight">\([c, b]\)</span>) adaptée à <span class="math notranslate nohighlight">\(\varphi_{|[a, c]}\)</span> (respectivement q <span class="math notranslate nohighlight">\(\varphi_{|[c, b]}\)</span>).</p>
+<p>Alors, <span class="math notranslate nohighlight">\((x_0, \ldots, x_{p-1}, x_p=c=y_1, \ldots, y_q)\)</span> est une subdivision <span class="math notranslate nohighlight">\([a, b]\)</span>. De plus <span class="math notranslate nohighlight">\(\varphi\)</span> est constante sur chaque intervalle <span class="math notranslate nohighlight">\(]x_{i-1}, x_{i}[\)</span> et <span class="math notranslate nohighlight">\(]y_{i-1}, y_{i}[\)</span>. Donc <span class="math notranslate nohighlight">\(\varphi\)</span> est en escalier sur <span class="math notranslate nohighlight">\([a, b]\)</span>.</p>
+</div>
+</div>
+</div>
+<div class="section" id="fonctions-continues-par-morceaux">
+<h1>Fonctions continues par morceaux<a class="headerlink" href="#fonctions-continues-par-morceaux" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="definition-exemples">
+<h2>Definition, exemples<a class="headerlink" href="#definition-exemples" title="Permalink to this headline">¶</a></h2>
+<div class="admonition-definition-4 admonition">
+<p class="admonition-title">Definition 4</p>
+<p>Une application <span class="math notranslate nohighlight">\(f\)</span> de <span class="math notranslate nohighlight">\([a, b]\)</span> and <span class="math notranslate nohighlight">\(\mathbb{R}\)</span> est dit continue par morceaux s’il existe une subdivision <span class="math notranslate nohighlight">\(u=(x_i)_{i=0}^n\)</span> de <span class="math notranslate nohighlight">\([a, b]\)</span> telle que pour chaque <span class="math notranslate nohighlight">\(i \in \{1,\ldots, n\}\)</span> la restriction de <span class="math notranslate nohighlight">\(f\)</span> a <span class="math notranslate nohighlight">\(]x_{i-1}, x_i[\)</span> soit continue et admette des limites finies en <span class="math notranslate nohighlight">\(x_{i-1}\)</span> et <span class="math notranslate nohighlight">\(x_{i}\)</span>.</p>
+<p>La subdivision <span class="math notranslate nohighlight">\(u\)</span> est dite adaptee a la fonction <span class="math notranslate nohighlight">\(f\)</span>.</p>
+</div>
+<p><strong>Illustration avec un exemple graphique</strong>:</p>
+<a class="bg-primary mb-1 reference internal image-reference" href="fig1.png"><img alt="fishy" class="bg-primary mb-1 align-center" src="fig1.png" style="width: 500px;" /></a>
+<div class="admonition-exemples admonition">
+<p class="admonition-title">Exemples</p>
+<ul class="simple">
+<li><p>Toute fonction en escalier est continue par morceaux.</p></li>
+<li><p>Toute fonction continue est continue par morceaux.</p></li>
+<li><p>La fonction <span class="math notranslate nohighlight">\(f\)</span> definie sur <span class="math notranslate nohighlight">\([-1, 1]\)</span> par :</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[f(0)=0 \mbox{  et  } \forall x \in [-1, 1] \setminus \{0\}, f(x)=\dfrac{1}{x}
+\]</div>
+<p>n’est pas continue par morceaux, car elle n’a pas de limite finie a droite et a gauche de <span class="math notranslate nohighlight">\(0\)</span>.</p>
+</div>
+<div class="admonition-remarques admonition">
+<p class="admonition-title">Remarques</p>
+<p>Comme pour les fonctions en escalier, on peut verifier que :</p>
+<ul class="simple">
+<li><p>si <span class="math notranslate nohighlight">\(u\)</span> est une subdivision adaptee a une fonction  <span class="math notranslate nohighlight">\(f\)</span> continue par marceaux,
+alars toute subdivision plus fine que <span class="math notranslate nohighlight">\(u\)</span> est adaptee it <span class="math notranslate nohighlight">\(f\)</span>,</p></li>
+<li><p>si <span class="math notranslate nohighlight">\(f\)</span> et <span class="math notranslate nohighlight">\(g\)</span> sont deux fonctions continues par morceaux sur <span class="math notranslate nohighlight">\([a, b]\)</span> , alors il existe
+une subdivision adaptee a <span class="math notranslate nohighlight">\(f\)</span> et <span class="math notranslate nohighlight">\(g\)</span>.</p></li>
+</ul>
+</div>
+<div class="admonition-proposition-6 admonition">
+<p class="admonition-title">Proposition 6</p>
+<p>Une fonction continue par morceaux sur  <span class="math notranslate nohighlight">\([a, b]\)</span> est bornee sur <span class="math notranslate nohighlight">\([a, b]\)</span> .</p>
+</div>
+<div class="dropdown admonition">
+<p class="admonition-title">Démonstration</p>
+<p>Soit <span class="math notranslate nohighlight">\(f\)</span> une fonction continue par morceaux sur  <span class="math notranslate nohighlight">\([a, b]\)</span>. Soit <span class="math notranslate nohighlight">\(u=(x_i)_{i=0}^n\)</span> une subdivision adaptee a <span class="math notranslate nohighlight">\(f\)</span>.</p>
+<p>Pour chaque <span class="math notranslate nohighlight">\(i \in \{1, \ldots, n\}\)</span> admet des limites finies en <span class="math notranslate nohighlight">\(x_{i-1}\)</span> et <span class="math notranslate nohighlight">\(x_i\)</span>. donc la restriction de <span class="math notranslate nohighlight">\(f\)</span> sur <span class="math notranslate nohighlight">\(]x_{i-1}, x_i[\)</span> admet un prolongement par continuite sur <span class="math notranslate nohighlight">\([x_{i-1}, x_i]\)</span> qui donc borne. Par suite, <span class="math notranslate nohighlight">\(f\)</span> est bornee sur <span class="math notranslate nohighlight">\(]x_{i-1}, x_i[\)</span>.</p>
+<p>Ceci dit,</p>
+<div class="math notranslate nohighlight">
+\[
+\forall i \in \{1, \ldots, n\}, \exists M_i \geq 0, \forall x \in ]x_{i-1}, x_i[, |f(x)| \leq M_i
+\]</div>
+<p>En prenant <span class="math notranslate nohighlight">\(M = \max_{i \in \{1, \ldots, n\}} M_i\)</span>, nous aurons <span class="math notranslate nohighlight">\(\forall x \in ]a, b[, |f(x)| \leq M\)</span>.</p>
+<p>Par suite, <span class="math notranslate nohighlight">\(f\)</span> est bonrnee sur <span class="math notranslate nohighlight">\(]a, b[\)</span>.</p>
+</div>
+<div class="admonition-proposition-7 admonition">
+<p class="admonition-title">Proposition 7</p>
+<p>Soienl <span class="math notranslate nohighlight">\(f\)</span> et <span class="math notranslate nohighlight">\(g\)</span> deux fonctions continues par morceaux sur <span class="math notranslate nohighlight">\([a,b]\)</span>. Les assertions suivantes sont correctes:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\( \forall \lambda, \mu \in \mathbb R, \lambda f + \mu g\)</span> est continue par morceaux.</p></li>
+<li><p><span class="math notranslate nohighlight">\(fg\)</span> est continue par morceaux.</p></li>
+</ul>
+</div>
+<div class="dropdown admonition">
+<p class="admonition-title">Démonstration</p>
+<p>Soit <span class="math notranslate nohighlight">\(u=(x_i)_{i=0}^n\)</span> une subdivision adaptee a <span class="math notranslate nohighlight">\(f\)</span> et <span class="math notranslate nohighlight">\(g\)</span>.</p>
+<p>Les restrictions des fonctions <span class="math notranslate nohighlight">\(f\)</span> et <span class="math notranslate nohighlight">\(g\)</span> a chacun des intervatles <span class="math notranslate nohighlight">\( ]x_{i-1}, x_i[\)</span> sont continues et admettent
+des limites finies en  <span class="math notranslate nohighlight">\(x_{i-1}\)</span> et <span class="math notranslate nohighlight">\(x_i\)</span>, donc il en est de meme pour <span class="math notranslate nohighlight">\(\lambda f + \mu g\)</span> et <span class="math notranslate nohighlight">\(fg\)</span>. Les fonctions
+<span class="math notranslate nohighlight">\(\lambda f + \mu g\)</span> et <span class="math notranslate nohighlight">\(fg\)</span> sont donc continues par morceaux sur <span class="math notranslate nohighlight">\([a, b]\)</span>.</p>
+</div>
+</div>
+<div class="section" id="integrale-d-une-fonction-continue-par-morceaux">
+<h2>Integrale d’une fonction continue par morceaux<a class="headerlink" href="#integrale-d-une-fonction-continue-par-morceaux" title="Permalink to this headline">¶</a></h2>
+<div class="admonition-theoreme-admis admonition">
+<p class="admonition-title">Theoreme (admis)</p>
+<p>Soit <span class="math notranslate nohighlight">\(f\)</span> une fonction continue par morceaux sur le segment <span class="math notranslate nohighlight">\([a, b]\)</span> . Pour tout
+reel <span class="math notranslate nohighlight">\(\epsilon &gt; O\)</span>:</p>
+<ul class="simple">
+<li><p>il existe une fonction en escalier <span class="math notranslate nohighlight">\(\theta\)</span> telle que <span class="math notranslate nohighlight">\(|f - \theta| \leq \epsilon\)</span></p></li>
+<li><p>il existe des fonctions en escalier <span class="math notranslate nohighlight">\(\varphi\)</span> et <span class="math notranslate nohighlight">\(\psi\)</span> telles que :</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+\varphi \leq f \leq \psi \mbox{   et  } \psi - \varphi \leq \epsilon
+\]</div>
+</div>
+<p><strong>Notations</strong>: Dans ce qui suit, pour une fonction continue par morceaux <span class="math notranslate nohighlight">\(f\)</span> nous allons adopte les notations suivantes:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\mathcal{E}^+(f)\)</span> l’ensemble des fonctions en escalier plus grandes que <span class="math notranslate nohighlight">\(f\)</span> .</p></li>
+<li><p><span class="math notranslate nohighlight">\(\mathcal{E}^-(f)\)</span> l’ensemble des fonctions en escalier plus petites que <span class="math notranslate nohighlight">\(f\)</span>.</p></li>
+</ul>
+<div class="admonition-proposition-8 admonition">
+<p class="admonition-title">Proposition 8</p>
+<p>Soit <span class="math notranslate nohighlight">\(f\)</span> une fonction continue par morceaux sur le segment <span class="math notranslate nohighlight">\([a, b]\)</span>. Alors:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\left\{\int_{[a, b]} \varphi | \varphi \in \mathcal{E}^-(f)\right\}\)</span> admet une borne superieure,</p></li>
+<li><p><span class="math notranslate nohighlight">\(\left\{\int_{[a, b]} \psi | \psi \in \mathcal{E}^+(f)\right\}\)</span> admet une borne inferieure,</p></li>
+</ul>
+<p>de plus,</p>
+<div class="math notranslate nohighlight">
+\[
+sup\left\{\int_{[a, b]} \varphi | \varphi \in \mathcal{E}^-(f)\right\}= inf\left\{\int_{[a, b]} \psi | \psi \in \mathcal{E}^+(f)\right\}
+\]</div>
+</div>
+<div class="dropdown admonition">
+<p class="admonition-title">Démonstration</p>
+<p>Soit <span class="math notranslate nohighlight">\(f\)</span> une fonction continue par morceaux sur <span class="math notranslate nohighlight">\([a, b]\)</span>. Donc <span class="math notranslate nohighlight">\(\left\{f(x)|x\in [a, b]\right\}\)</span> est une partie non vide de <span class="math notranslate nohighlight">\(\mathbb R\)</span> bornee donc admet une borne superieure et une borne inferieure. Soit <span class="math notranslate nohighlight">\(m=\inf_{[a, b]}\)</span> et <span class="math notranslate nohighlight">\(M=\sup_{[a, b]}\)</span>.</p>
+<p>les deux fonctions constantes <span class="math notranslate nohighlight">\(m\)</span> et <span class="math notranslate nohighlight">\(M\)</span> sur <span class="math notranslate nohighlight">\([a, b]\)</span> sont aussi continues par morceaux sur <span class="math notranslate nohighlight">\([a, b]\)</span>. <span class="math notranslate nohighlight">\(\left\{\int_{[a, b]} \varphi | \varphi \in \mathcal{E}^-(f)\right\}\)</span> est donc une partie de <span class="math notranslate nohighlight">\(\bb R\)</span> non vide majoree (par <span class="math notranslate nohighlight">\(M(b-a)\)</span>) donc possede une borne superieure (<span class="math notranslate nohighlight">\(\alpha\)</span>). De meme, <span class="math notranslate nohighlight">\(\left\{\int_{[a, b]} \psi | \psi \in \mathcal{E}^+(f)\right\}\)</span> une partie de <span class="math notranslate nohighlight">\(\bb R\)</span> non vide minoree donc possede une borne inferieure (<span class="math notranslate nohighlight">\(\beta\)</span>).</p>
+<hr class="docutils" />
+<hr class="docutils" />
+<p>donc</p>
+<div class="math notranslate nohighlight">
+\[
+\alpha \leq \beta
+\]</div>
+<p>D’aute part, d’apres le theoreme</p>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="intro.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Welcome to your Jupyter Book</p>
+        </div>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Professeur Jouilil Youness<br/>
+    
+        &copy; Copyright 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
