@@ -971,14 +971,7 @@ Var(Y_t) &amp; = Var( \mu + \sum_{j=1}^{q} \theta_{j} \eta_{t-j} + \eta_{t})\\
         &amp; = \sigma^2\sum_{j=1}^{q} \theta_{j}^2 + \sigma^2\\
         &amp; = \sigma^2(1+\sum_{j=1}^{q} \theta_{j}^2)
 \end{split}\]</div>
-<p>Aussi,</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\gamma_Y(k) &amp; = Cov( \mu + \sum_{j=1}^{q} \theta_{j} \eta_{t-j} + \eta_{t}~,~ \mu + \sum_{j=1}^{q} \theta_{j} \eta_{t+k-j} + \eta_{t+k})\\
-    &amp; = Cov( \sum_{j=1}^{q} \theta_{j} \eta_{t-j} + \eta_{t}~,~ \sum_{j=1}^{q} \theta_{j} \eta_{t+k-j} + \eta_{t+k})\\
-    &amp; = Cov( \sum_{j=1}^{q} \theta_{j} \eta_{t-j} ~,~ \sum_{j=1}^{q} \theta_{j} \eta_{t+k-j})  + Cov( \sum_{j=1}^{q} \theta_{j} \eta_{t-j} ~,~  + \eta_{t+k})\\ &amp;+ Cov(\eta_{t}~,~ \sum_{j=1}^{q} \theta_{j} \eta_{t+k-j}) + Cov( \eta_{t}~,~ \eta_{t+k}) \\
-    &amp; = 
-\end{split}\]</div>
+<p><span class="math notranslate nohighlight">\(\gamma_Y(k) \)</span> est indépendante du temps.</p>
 <p>Ainsi, si le processus <span class="math notranslate nohighlight">\(\lbrace Y_t \rbrace_{t \in \mathbb{Z}}\)</span> suit un MA(q) alors <span class="math notranslate nohighlight">\(\lbrace Y_t \rbrace_{t \in \mathbb{Z}}\)</span> est nécessairement stationnaire.</p>
 </div>
 <div class="admonition-theoreme admonition">
@@ -1048,7 +1041,7 @@ Y_t = \mu + \sum_{j=1}^{p} \Phi_{j} Y_{t-j}  + \eta_{t} ~~~~,~~~~ (\forall t \in
 <p class="admonition-title">Proposition</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-    (Y_t) \sim AR(1) \Rightarrow 
+    (Y_t) \sim AR(1) &amp; |\Phi|&lt;1 \Rightarrow 
     \begin{cases}
      \mathbb{E}(Y_t) =  \dfrac{\mu}{1-\Phi}  \\
      Var(Y_t) =  \dfrac{\sigma^2}{1-\Phi^2}  \\
@@ -1296,7 +1289,7 @@ y_t = \theta_1\eta_{t-1} + \theta_2\eta_{t-2} + \ldots + \theta_q\eta_{t-q} + \e
 <p>Ainsi, <span class="math notranslate nohighlight">\((X_t)\)</span>  est un ARMA(2,2) causal et stationnaire (les racines du polynôme characteristique associé sont superieures à un), avec :</p>
 <div class="math notranslate nohighlight">
 \[
-  X_t = 2y_{t-1} +\eta_t -\dfrac{14}{3}\eta_t ~ , ~ (\eta_t) \sim WN (0 , \sigma^2)  
+  X_t = 2X_{t-1} +\eta_t -\dfrac{14}{3}\eta_t ~ , ~ (\eta_t) \sim WN (0 , \sigma^2)  
 \]</div>
 <p>puisque elle est surparametré ( peut être paramétré à un processus ARMA(1,1)).</p>
 </div>

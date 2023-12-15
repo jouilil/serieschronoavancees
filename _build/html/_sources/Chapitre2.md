@@ -182,9 +182,7 @@ $$
 
 
 
-##### 5.  processus ARCH 
-
-###### 6.1. processus ARCH (1)
+##### 5.  Processus ARCH \& GARCH
 
 
 

@@ -609,14 +609,7 @@ Var(Y_t) & = Var( \mu + \sum_{j=1}^{q} \theta_{j} \eta_{t-j} + \eta_{t})\\
         & = \sigma^2(1+\sum_{j=1}^{q} \theta_{j}^2)
 $$
 
-Aussi,
-
-$$
-\gamma_Y(k) & = Cov( \mu + \sum_{j=1}^{q} \theta_{j} \eta_{t-j} + \eta_{t}~,~ \mu + \sum_{j=1}^{q} \theta_{j} \eta_{t+k-j} + \eta_{t+k})\\
-    & = Cov( \sum_{j=1}^{q} \theta_{j} \eta_{t-j} + \eta_{t}~,~ \sum_{j=1}^{q} \theta_{j} \eta_{t+k-j} + \eta_{t+k})\\
-    & = Cov( \sum_{j=1}^{q} \theta_{j} \eta_{t-j} ~,~ \sum_{j=1}^{q} \theta_{j} \eta_{t+k-j})  + Cov( \sum_{j=1}^{q} \theta_{j} \eta_{t-j} ~,~  + \eta_{t+k})\\ &+ Cov(\eta_{t}~,~ \sum_{j=1}^{q} \theta_{j} \eta_{t+k-j}) + Cov( \eta_{t}~,~ \eta_{t+k}) \\
-    & = 
-$$
+$\gamma_Y(k) $ est indépendante du temps.
 
 Ainsi, si le processus $\lbrace Y_t \rbrace_{t \in \mathbb{Z}}$ suit un MA(q) alors $\lbrace Y_t \rbrace_{t \in \mathbb{Z}}$ est nécessairement stationnaire.
 ```
@@ -710,7 +703,7 @@ Le processus $(Y_t)$ stationnaire et causal si si les racines du polynôme $A(z)
 
 
 $$
-    (Y_t) \sim AR(1) \Rightarrow 
+    (Y_t) \sim AR(1) & |\Phi|<1 \Rightarrow 
     \begin{cases}
      \mathbb{E}(Y_t) =  \dfrac{\mu}{1-\Phi}  \\
      Var(Y_t) =  \dfrac{\sigma^2}{1-\Phi^2}  \\
@@ -1000,7 +993,7 @@ $$
 Ainsi, $(X_t)$  est un ARMA(2,2) causal et stationnaire (les racines du polynôme characteristique associé sont superieures à un), avec : 
 
 $$
-  X_t = 2y_{t-1} +\eta_t -\dfrac{14}{3}\eta_t ~ , ~ (\eta_t) \sim WN (0 , \sigma^2)  
+  X_t = 2X_{t-1} +\eta_t -\dfrac{14}{3}\eta_t ~ , ~ (\eta_t) \sim WN (0 , \sigma^2)  
 $$
 
 puisque elle est surparametré ( peut être paramétré à un processus ARMA(1,1)).

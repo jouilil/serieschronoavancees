@@ -76,20 +76,6 @@ stationnariser la série.
 
 
 
-###### 2. 1 Processus DS et TS
-
-
-```{admonition} Processus DS
-
-Un processus DS avec dérive s’écrit : :
-
-$$
-X_t = X_{t-1} + \eta_t + \beta
-$$
-
-
-
-```
 
 ```
 ```
