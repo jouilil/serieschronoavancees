@@ -1,0 +1,526 @@
+
+<!DOCTYPE html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Série 2 : Application linéaire &#8212; FSJESM, UH2</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet">
+  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/translations.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Recherche" href="search.html" />
+    <link rel="next" title="Série 3 : Matrice" href="S%C3%A9rie3.html" />
+    <link rel="prev" title="Série 1 : Espace vectoriel" href="S%C3%A9rie1.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="fr">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.JPG" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">FSJESM, UH2</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Rechercher dans ce livre ..." aria-label="Rechercher dans ce livre ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   Pr. Jouilil Youness
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="S%C3%A9rie1.html">
+   Série 1 : Espace vectoriel
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Série 2 : Application linéaire
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="S%C3%A9rie3.html">
+   Série 3 : Matrice
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="S%C3%A9rie4.html">
+   Série 4 : Systèmes linéaires
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="S%C3%A9rie5.html">
+   Série 5 : Diagonalisation d’une matrice carrée
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Basculer la navigation" aria-controls="site-navigation"
+                title="Basculer la navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Téléchargez cette page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/Série2.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Télécharger le fichier source" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Imprimer au format PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/executablebooks/jupyter-book"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Dépôt source"><i
+                    class="fab fa-github"></i>dépôt</button></a>
+        <a class="issues-button"
+            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FSérie2.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Ouvrez un problème"><i class="fas fa-lightbulb"></i>signaler un problème</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Mode plein écran"
+        title="Mode plein écran"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contenu
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#prof-jouilil-youness">
+   Prof. Jouilil Youness
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#applications-lineaires">
+     1. Applications linéaires
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#noyau-et-image-dune-application-lineaire">
+     2. Noyau et image d’une application linéaire
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#applications-lineaires-injectives-et-surjectives">
+     3. Applications linéaires injectives et surjectives.
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Série 2 : Application linéaire</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contenu </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#prof-jouilil-youness">
+   Prof. Jouilil Youness
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#applications-lineaires">
+     1. Applications linéaires
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#noyau-et-image-dune-application-lineaire">
+     2. Noyau et image d’une application linéaire
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#applications-lineaires-injectives-et-surjectives">
+     3. Applications linéaires injectives et surjectives.
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="section" id="serie-2-application-lineaire">
+<h1>Série 2 : Application linéaire<a class="headerlink" href="#serie-2-application-lineaire" title="Lien permanent vers ce titre">¶</a></h1>
+<div class="section" id="prof-jouilil-youness">
+<h2>Prof. Jouilil Youness<a class="headerlink" href="#prof-jouilil-youness" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="section" id="applications-lineaires">
+<h3>1. Applications linéaires<a class="headerlink" href="#applications-lineaires" title="Lien permanent vers ce titre">¶</a></h3>
+<div class="admonition-exercice-1 admonition">
+<p class="admonition-title">Exercice 1</p>
+<p>Déterminer si les applications suivantes sont linéaires ?</p>
+<div class="math notranslate nohighlight">
+\[
+f : \mathbb{R}^2 \rightarrow \mathbb{R}^3, f(x; y) = (x - y; 3x + y; -x + y )
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+h : \mathbb{R}^2 \rightarrow \mathbb{R}^2, h(x; y) = (x - y; 3x -5y )
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+k : \mathbb{R}^3 \rightarrow \mathbb{R}^4, h(x; y; z) = (x - y; 3x -5y-2, z, 8 )
+\]</div>
+</div>
+<div class="attention dropdown admonition">
+<p class="admonition-title"><font color='blue'>Réponse de l’exercice 1</font></p>
+<div class="math notranslate nohighlight">
+\[
+f : \mathbb{R}^2 \rightarrow \mathbb{R}^3, f(x; y) = (x - y; 3x + y; -x + y )
+\]</div>
+<p>Montrons que l’application <span class="math notranslate nohighlight">\(f\)</span> est linéaire</p>
+<p>Soit <span class="math notranslate nohighlight">\(\alpha\)</span>, <span class="math notranslate nohighlight">\(\beta\)</span> <span class="math notranslate nohighlight">\(\in\)</span> <span class="math notranslate nohighlight">\(\mathbb{R}\)</span></p>
+<p>Soient <span class="math notranslate nohighlight">\(u =(x,y)\)</span> et <span class="math notranslate nohighlight">\(u'\)</span>=<span class="math notranslate nohighlight">\((x',y')\)</span> <span class="math notranslate nohighlight">\(\in\)</span> <span class="math notranslate nohighlight">\(\mathbb{R}^2\)</span></p>
+<div class="math notranslate nohighlight">
+\[
+f(\alpha u, \beta u') = \alpha f(u) + \beta f(u')
+\]</div>
+<p>Donc <span class="math notranslate nohighlight">\(f\)</span> est ine application linéaire</p>
+<ul class="simple">
+<li><p>De même, on peut montrer que <span class="math notranslate nohighlight">\(h\)</span> est une application linéaire</p></li>
+<li><p><span class="math notranslate nohighlight">\(k\)</span> n’est pas une application linéaire car</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+k(0,0,0) \neq = (0,0,0,0)
+\]</div>
+</div>
+<div class="admonition-exercice-2 admonition">
+<p class="admonition-title">Exercice 2</p>
+<p>Soit <span class="math notranslate nohighlight">\(f\)</span> l’application de <span class="math notranslate nohighlight">\(\mathbb{R}^3\)</span> dans <span class="math notranslate nohighlight">\(\mathbb{R}^2\)</span> définie par :</p>
+<div class="math notranslate nohighlight">
+\[
+f(x; y; z) = (\gamma x - y; y -\gamma z)
+\]</div>
+<p>Avec <span class="math notranslate nohighlight">\(\gamma = constant ~ \in ~\mathbb{R}\)</span></p>
+<ul class="simple">
+<li><p>Démontrer que <span class="math notranslate nohighlight">\(f\)</span> est une application linéaire quel que soit <span class="math notranslate nohighlight">\(\gamma\)</span></p></li>
+</ul>
+</div>
+<div class="attention dropdown admonition">
+<p class="admonition-title"><font color='blue'>Réponse de l’exercice 2</font></p>
+<p>Soit <span class="math notranslate nohighlight">\(f\)</span> l’application de <span class="math notranslate nohighlight">\(\mathbb{R}^3\)</span> dans <span class="math notranslate nohighlight">\(\mathbb{R}^2\)</span> définie par :</p>
+<div class="math notranslate nohighlight">
+\[
+f(x; y; z) = (\gamma x - y; y -\gamma z)
+\]</div>
+<p>Avec <span class="math notranslate nohighlight">\(\gamma = constant ~ \in ~\mathbb{R}\)</span></p>
+<ul class="simple">
+<li><p>Démontrons que <span class="math notranslate nohighlight">\(f\)</span> est une application linéaire quel que soit <span class="math notranslate nohighlight">\(\gamma\)</span></p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="noyau-et-image-dune-application-lineaire">
+<h3>2. Noyau et image d’une application linéaire<a class="headerlink" href="#noyau-et-image-dune-application-lineaire" title="Lien permanent vers ce titre">¶</a></h3>
+<div class="admonition-exercice-3 admonition">
+<p class="admonition-title">Exercice 3</p>
+<p>Soit <span class="math notranslate nohighlight">\(f\)</span> l’application de <span class="math notranslate nohighlight">\(\mathbb{R}^2\)</span> dans <span class="math notranslate nohighlight">\(\mathbb{R}^3\)</span> définie par :</p>
+<div class="math notranslate nohighlight">
+\[
+f : \mathbb{R}^2 \rightarrow \mathbb{R}^3, f(x, y) = (x - y; 3x + y; -x + y )
+\]</div>
+<ol class="simple">
+<li><p>Déterminer une base du noyau de f.</p></li>
+<li><p>Déduire la dimension du noyau de f.</p></li>
+</ol>
+</div>
+<div class="attention dropdown admonition">
+<p class="admonition-title"><font color='blue'>Réponse de l’exercice 3</font></p>
+<p>Soit <span class="math notranslate nohighlight">\(f\)</span> l’application de <span class="math notranslate nohighlight">\(\mathbb{R}^2\)</span> dans <span class="math notranslate nohighlight">\(\mathbb{R}^3\)</span> définie par :</p>
+<div class="math notranslate nohighlight">
+\[
+f : \mathbb{R}^2 \rightarrow \mathbb{R}^3, f(x, y) = (x - y; 3x + y; -x + y )
+\]</div>
+<ul class="simple">
+<li><p>Déterminons une base du noyau de f.</p></li>
+</ul>
+</div>
+<div class="admonition-exercice-4 admonition">
+<p class="admonition-title">Exercice 4</p>
+<p>Soit <span class="math notranslate nohighlight">\(f\)</span> l’application de <span class="math notranslate nohighlight">\(\mathbb{R}^3\)</span> dans <span class="math notranslate nohighlight">\(\mathbb{R}^2\)</span> définie par :</p>
+<div class="math notranslate nohighlight">
+\[
+f : \mathbb{R}^2 \rightarrow \mathbb{R}^3, f(x, y) = (x - y -z; y + z -x  )
+\]</div>
+<ol class="simple">
+<li><p>Déterminer une base de Ker( f )</p></li>
+<li><p>Déterminer une base de Im( f )</p></li>
+</ol>
+</div>
+<div class="attention dropdown admonition">
+<p class="admonition-title"><font color='blue'>Réponse de l’exercice 4</font></p>
+<p>Soit <span class="math notranslate nohighlight">\(f\)</span> l’application de <span class="math notranslate nohighlight">\(\mathbb{R}^3\)</span> dans <span class="math notranslate nohighlight">\(\mathbb{R}^2\)</span> définie par :</p>
+<div class="math notranslate nohighlight">
+\[
+f : \mathbb{R}^2 \rightarrow \mathbb{R}^3, f(x, y) = (x - y -z; y + z -x  )
+\]</div>
+<ul class="simple">
+<li><p>Déterminons une base de Ker( f )</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="applications-lineaires-injectives-et-surjectives">
+<h3>3. Applications linéaires injectives et surjectives.<a class="headerlink" href="#applications-lineaires-injectives-et-surjectives" title="Lien permanent vers ce titre">¶</a></h3>
+<div class="admonition-exercice-5 admonition">
+<p class="admonition-title">Exercice 5</p>
+<p>Soit <span class="math notranslate nohighlight">\(f\)</span> l’application de <span class="math notranslate nohighlight">\(\mathbb{R}^2\)</span> dans <span class="math notranslate nohighlight">\(\mathbb{R}^3\)</span> définie par :</p>
+<div class="math notranslate nohighlight">
+\[
+f : \mathbb{R}^2 \rightarrow \mathbb{R}^3, f(x, y) = (x - y; 3x + y; -x + y )
+\]</div>
+<ol class="simple">
+<li><p>Déterminer une base du noyau de f.</p></li>
+<li><p>Déduire la dimension du noyau de f.</p></li>
+<li><p>f est-elle injective ? Justifier votre réponse.</p></li>
+<li><p>f est-elle surjective ? Justifier votre réponse.</p></li>
+</ol>
+</div>
+<div class="attention dropdown admonition">
+<p class="admonition-title"><font color='blue'>Réponse de l’exercice 5</font></p>
+<p>Soit <span class="math notranslate nohighlight">\(f\)</span> l’application de <span class="math notranslate nohighlight">\(\mathbb{R}^2\)</span> dans <span class="math notranslate nohighlight">\(\mathbb{R}^3\)</span> définie par :</p>
+<div class="math notranslate nohighlight">
+\[
+f : \mathbb{R}^2 \rightarrow \mathbb{R}^3, f(x, y) = (x - y; 3x + y; -x + y )
+\]</div>
+<ul class="simple">
+<li><p>Déterminons une base du noyau de f.</p></li>
+</ul>
+</div>
+<div class="admonition-exercice-6 admonition">
+<p class="admonition-title">Exercice 6</p>
+<p>On considère l’application linéaire f définie par :</p>
+<div class="math notranslate nohighlight">
+\[
+ f( x,y,z) = (x + y, y + z, z + x, x + y + z)
+\]</div>
+<p>On vous demande alors de :</p>
+<ul class="simple">
+<li><p>Calculer l’image de la base canonique de <span class="math notranslate nohighlight">\(\mathbb{R}^3\)</span>  par <span class="math notranslate nohighlight">\(f\)</span> .</p></li>
+<li><p>Déduire une base de <span class="math notranslate nohighlight">\(Im(f)\)</span></p></li>
+<li><p>Déduire le rang de f.</p></li>
+<li><p>Déterminer le noyau de <span class="math notranslate nohighlight">\(f(Ker(f))\)</span> et en déduire le rang de <span class="math notranslate nohighlight">\(f(rg( f ))\)</span>.</p></li>
+</ul>
+</div>
+<div class="attention dropdown admonition">
+<p class="admonition-title"><font color='blue'>Réponse de l’exercice 6</font></p>
+<div class="math notranslate nohighlight">
+\[
+ f( x,y,z) = (x + y, y + z, z + x, x + y + z)
+\]</div>
+<ul class="simple">
+<li><p>Calculons l’image de la base canonique de <span class="math notranslate nohighlight">\(\mathbb{R}^3\)</span>  par <span class="math notranslate nohighlight">\(f\)</span> .</p></li>
+</ul>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="S%C3%A9rie1.html" title="précédent page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">précédent</p>
+            <p class="prev-next-title">Série 1 : Espace vectoriel</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="S%C3%A9rie3.html" title="suivant page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">suivant</p>
+        <p class="prev-next-title">Série 3 : Matrice</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      Par Prof. Jouilil Youness<br/>
+    
+        &copy; droits d'auteur 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

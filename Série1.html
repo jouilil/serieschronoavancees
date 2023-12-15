@@ -1,0 +1,799 @@
+
+<!DOCTYPE html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Série 1 : Espace vectoriel &#8212; FSJESM, UH2</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet">
+  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/translations.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Recherche" href="search.html" />
+    <link rel="next" title="Série 2 : Application linéaire" href="S%C3%A9rie2.html" />
+    <link rel="prev" title="Pr. Jouilil Youness" href="intro.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="fr">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.JPG" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">FSJESM, UH2</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Rechercher dans ce livre ..." aria-label="Rechercher dans ce livre ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   Pr. Jouilil Youness
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Série 1 : Espace vectoriel
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="S%C3%A9rie2.html">
+   Série 2 : Application linéaire
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="S%C3%A9rie3.html">
+   Série 3 : Matrice
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="S%C3%A9rie4.html">
+   Série 4 : Systèmes linéaires
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="S%C3%A9rie5.html">
+   Série 5 : Diagonalisation d’une matrice carrée
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Basculer la navigation" aria-controls="site-navigation"
+                title="Basculer la navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Téléchargez cette page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/Série1.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Télécharger le fichier source" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Imprimer au format PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/executablebooks/jupyter-book"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Dépôt source"><i
+                    class="fab fa-github"></i>dépôt</button></a>
+        <a class="issues-button"
+            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FSérie1.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Ouvrez un problème"><i class="fas fa-lightbulb"></i>signaler un problème</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Mode plein écran"
+        title="Mode plein écran"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contenu
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#prof-jouilil-youness">
+   Prof. Jouilil Youness
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sous-espace-vectoriel">
+     1. Sous-espace vectoriel
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#combinaison-lineaire">
+     2. Combinaison linéaire
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#famille-libre">
+     4. Famille libre
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#base">
+     3. base
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#famille-generatrice">
+     4. Famille génératrice
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Série 1 : Espace vectoriel</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contenu </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#prof-jouilil-youness">
+   Prof. Jouilil Youness
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sous-espace-vectoriel">
+     1. Sous-espace vectoriel
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#combinaison-lineaire">
+     2. Combinaison linéaire
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#famille-libre">
+     4. Famille libre
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#base">
+     3. base
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#famille-generatrice">
+     4. Famille génératrice
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="section" id="serie-1-espace-vectoriel">
+<h1>Série 1 : Espace vectoriel<a class="headerlink" href="#serie-1-espace-vectoriel" title="Lien permanent vers ce titre">¶</a></h1>
+<div class="section" id="prof-jouilil-youness">
+<h2>Prof. Jouilil Youness<a class="headerlink" href="#prof-jouilil-youness" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="section" id="sous-espace-vectoriel">
+<h3>1. Sous-espace vectoriel<a class="headerlink" href="#sous-espace-vectoriel" title="Lien permanent vers ce titre">¶</a></h3>
+<div class="admonition-exercice-1 admonition">
+<p class="admonition-title">Exercice 1</p>
+<p><strong>Montrer que les sous-ensembles suivants des sous-espaces vectoriels</strong></p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(A_1\)</span> =<span class="math notranslate nohighlight">\( \left\{ (x,y,z) \in \mathbb{R}^3 / x+y+z = 0 \right\}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(A_2\)</span> = <span class="math notranslate nohighlight">\( \left\{ (x,y,z) \in \mathbb{R}^3 / x-y = 0 \right\}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(A_3\)</span> = <span class="math notranslate nohighlight">\( \left\{ (x,y,z) \in \mathbb{R}^3 / x =3z \right\}\)</span></p></li>
+</ul>
+</div>
+<center><font color='red'>Vous avez 5 min !</font></center>
+<div class="attention dropdown admonition">
+<p class="admonition-title"><font color='blue'>Réponse de l’exercice 1</font></p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(A_1\)</span> =<span class="math notranslate nohighlight">\( \left\{ (x,y,z) \in \mathbb{R}^3 / x+y+z = 0 \right\}\)</span></p></li>
+</ul>
+<p><span class="math notranslate nohighlight">\((0,0,0) ~\in\)</span> <span class="math notranslate nohighlight">\(A_1 ~~ \Rightarrow A_1 \neq  \emptyset\)</span></p>
+<p>Soit :  <span class="math notranslate nohighlight">\(X=(x,y,z) ~ et~ X'= (x',y',z') ~ \in ~A_1\)</span></p>
+<p>On a :</p>
+<p><span class="math notranslate nohighlight">\(X+ X' = (x,y,z) + (x',y',z') = (x+x',y+y',z+z')\)</span></p>
+<p>tel que : <span class="math notranslate nohighlight">\(x+y+z = 0 ~et~ x'+y'+z' = 0 \Rightarrow x+x'+y'+ y+ z +z' = 0 \)</span></p>
+<p><span class="math notranslate nohighlight">\(X=(x,y,z) ~ et~ X'= (x',y',z') ~ \in ~A_1 \Rightarrow X+ X'~ \in ~A_1\)</span></p>
+<p><span class="math notranslate nohighlight">\(\lambda X = (\lambda x, \lambda y,\lambda z)\)</span></p>
+<p>tel que :
+<span class="math notranslate nohighlight">\(\lambda x+ \lambda y+ \lambda z = 0 \Rightarrow \lambda (x+y+z) = 0\)</span></p>
+<p>Ainsi, <span class="math notranslate nohighlight">\(\lambda X \in ~A_1\)</span></p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(A_2\)</span> = <span class="math notranslate nohighlight">\( \left\{ (x,y,z) \in \mathbb{R}^3 / x-y = 0 \right\}\)</span></p></li>
+</ul>
+<p><span class="math notranslate nohighlight">\((0,0,0) ~\in\)</span> <span class="math notranslate nohighlight">\(A_2 ~~ \Rightarrow A_2 \neq  \emptyset\)</span></p>
+<p>Soit :  <span class="math notranslate nohighlight">\(X=(x,y,z) ~ et~ X'= (x',y',z') ~ \in ~A_2\)</span></p>
+<p>On a :</p>
+<p><span class="math notranslate nohighlight">\(X+ X' = (x,y,z) + (x',y',z') = (x+x',y+y',z+z')\)</span></p>
+<p>tel que : <span class="math notranslate nohighlight">\(x-y = 0 ~et~ x'-y' = 0 \Rightarrow x+x'-(y'+y) = 0 \)</span></p>
+<p><span class="math notranslate nohighlight">\(X=(x,y,z) ~ et~ X'= (x',y',z') ~ \in ~A_2 \Rightarrow X+ X'~ \in ~A_2\)</span></p>
+<p><span class="math notranslate nohighlight">\(\lambda X = (\lambda x, \lambda y,\lambda z)\)</span></p>
+<p>tel que :
+<span class="math notranslate nohighlight">\(\lambda x- \lambda y = 0 \Rightarrow \lambda (x-y) = 0\)</span></p>
+<p>Ainsi, <span class="math notranslate nohighlight">\(\lambda X \in ~A_2\)</span></p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(A_3\)</span> = <span class="math notranslate nohighlight">\( \left\{ (x,y,z) \in \mathbb{R}^3 / x =3z \right\}\)</span></p></li>
+</ul>
+<p><span class="math notranslate nohighlight">\((0,0,0) ~\in\)</span> <span class="math notranslate nohighlight">\(A_3 ~~ \Rightarrow A_3 \neq  \emptyset\)</span></p>
+<p>Soit :  <span class="math notranslate nohighlight">\(X=(x,y,z) ~ et~ X'= (x',y',z') ~ \in ~A_3\)</span></p>
+<p>On a :</p>
+<p><span class="math notranslate nohighlight">\(X+ X' = (x,y,z) + (x',y',z') = (x+x',y+y',z+z')\)</span></p>
+<p>tel que : <span class="math notranslate nohighlight">\(x= =3z ~et~ x'=3z' \Rightarrow x+x'==3(z+z') \)</span></p>
+<p><span class="math notranslate nohighlight">\(X=(x,y,z) ~ et~ X'= (x',y',z') ~ \in ~A_3 \Rightarrow X+ X'~ \in ~A_3\)</span></p>
+<p><span class="math notranslate nohighlight">\(\lambda X = (\lambda x, \lambda y,\lambda z)\)</span></p>
+<p>tel que :
+<span class="math notranslate nohighlight">\(\lambda x =\lambda 3z \)</span></p>
+<p>Ainsi, <span class="math notranslate nohighlight">\(\lambda X \in ~A_3\)</span></p>
+</div>
+<div class="admonition-exercice-2 admonition">
+<p class="admonition-title">Exercice 2</p>
+<p><strong>Les sous-ensembles suivants sont-ils des sous-espaces vectoriels ?</strong></p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(A_1\)</span> =<span class="math notranslate nohighlight">\( \left\{ (x,y,z) \in \mathbb{R}^3 / x+y-3z = 2 \right\}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(A_2\)</span> =  <span class="math notranslate nohighlight">\(\left\{ (x,y,z) \in \mathbb{R}^3 / x+y &gt; z \right\}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(A_3\)</span> = <span class="math notranslate nohighlight">\( \left\{ (x,y,z) \in \mathbb{R}^3 / xyz = 0 \right\}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(A_4\)</span> = <span class="math notranslate nohighlight">\( \left\{ (x,y,z, t) \in \mathbb{R}^4 / x = 2y= -z=3t \right\}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(A_5\)</span> = <span class="math notranslate nohighlight">\( \left\{ (x,y,z) \in \mathbb{R}^3 / y(x^2+z) = 0 \right\}\)</span></p></li>
+</ul>
+</div>
+<center><font color='red'>Vous avez 5 min !</font></center>
+<div class="attention dropdown admonition">
+<p class="admonition-title"><font color='blue'>Réponse de l’exercice 2</font></p>
+<p>Pour</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(A_1\)</span> =<span class="math notranslate nohighlight">\( \left\{ (x,y,z) \in \mathbb{R}^3 / x+y-3z = 2 \right\}\)</span></p></li>
+</ul>
+<p>Méthode 1 :</p>
+<p>Soit :  <span class="math notranslate nohighlight">\(X=(0,2,0) ~ et~ X'= (2,0, 0) ~ \in ~A_1\)</span>
+<span class="math notranslate nohighlight">\(X+ X' = (2,2,0)~ \notin ~A_1\)</span></p>
+<p><span class="math notranslate nohighlight">\(A_1\)</span> n’est pas un s.e.v de <span class="math notranslate nohighlight">\(\mathbb{R}^3\)</span></p>
+<p>Méthode 2 :</p>
+<p><span class="math notranslate nohighlight">\((0,0,0)~ \notin ~A_1\)</span></p>
+<p>Donc : <span class="math notranslate nohighlight">\(A_1\)</span> n’est pas un s.e.v de <span class="math notranslate nohighlight">\(\mathbb{R}^3\)</span></p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(A_2\)</span> =  <span class="math notranslate nohighlight">\(\left\{ (x,y,z) \in \mathbb{R}^3 / x+y &gt; z \right\}\)</span></p></li>
+</ul>
+<p><span class="math notranslate nohighlight">\((0,0,0)~ \notin ~A_2\)</span></p>
+<p>Donc : <span class="math notranslate nohighlight">\(A_2\)</span> n’est pas un s.e.v de <span class="math notranslate nohighlight">\(\mathbb{R}^3\)</span></p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(A_3\)</span> = <span class="math notranslate nohighlight">\( \left\{ (x,y,z) \in \mathbb{R}^3 / xyz = 0 \right\}\)</span></p></li>
+</ul>
+<p>Soit :  <span class="math notranslate nohighlight">\(X=(x,y,z) ~ et~ X'= (x',y',z') ~ \in ~A_3\)</span></p>
+<p>On a :</p>
+<p><span class="math notranslate nohighlight">\(X+ X' = (x,y,z) + (x',y',z') = (x+x',y+y',z+z')\)</span></p>
+<p>tel que : <span class="math notranslate nohighlight">\(xyz= 0 ~et~ x'y'z' = 0 \Rightarrow xyz(x'y'z') = 0 \)</span></p>
+<p><span class="math notranslate nohighlight">\(X=(x,y,z) ~ et~ X'= (x',y',z') ~ \in ~A_3 \Rightarrow X+ X'~ \in ~A_3\)</span></p>
+<p><span class="math notranslate nohighlight">\(\lambda X = (\lambda x, \lambda y,\lambda z)\)</span></p>
+<p>tel que :
+<span class="math notranslate nohighlight">\(\lambda xyz = 0 \Rightarrow \lambda (xyz) = 0\)</span></p>
+<p>Ainsi, <span class="math notranslate nohighlight">\(\lambda X \in ~A_3\)</span></p>
+<p>Donc : <span class="math notranslate nohighlight">\(A_3\)</span> est un s.e.v de <span class="math notranslate nohighlight">\(\mathbb{R}^3\)</span></p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(A_4\)</span> = <span class="math notranslate nohighlight">\( \left\{ (x,y,z, t) \in \mathbb{R}^4 / x = 2y= -z=3t \right\}\)</span></p></li>
+</ul>
+<p>De même, on peut montrer que <span class="math notranslate nohighlight">\(A_4\)</span> est un s.e.v de <span class="math notranslate nohighlight">\(\mathbb{R}^4\)</span></p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(A_5\)</span> = <span class="math notranslate nohighlight">\( \left\{ (x,y,z) \in \mathbb{R}^3 / y(x^2+z) = 0 \right\}\)</span></p></li>
+</ul>
+<p><span class="math notranslate nohighlight">\(X= (1,0,2) \in ~A_5\)</span> et <span class="math notranslate nohighlight">\( X'=(3,1, -9) \in ~A_5\)</span></p>
+<p><span class="math notranslate nohighlight">\(X + X'= (1,0,2)+(3,1, -9) = (4, 1, -7) \notin ~A_5\)</span></p>
+<p>Donc : <span class="math notranslate nohighlight">\(A_5\)</span> n’est pas un s.e.v de <span class="math notranslate nohighlight">\(\mathbb{R}^3\)</span></p>
+</div>
+</div>
+<div class="section" id="combinaison-lineaire">
+<h3>2. Combinaison linéaire<a class="headerlink" href="#combinaison-lineaire" title="Lien permanent vers ce titre">¶</a></h3>
+<div class="admonition-exercice-3 admonition">
+<p class="admonition-title">Exercice 3</p>
+<p>On considère les vecteurs de <span class="math notranslate nohighlight">\(\mathbb{R}^3\)</span> suivants :
+<span class="math notranslate nohighlight">\(
+u_1=(1,0,1) ; u_2=(0,1,1) ; u_3=(1,1,0)
+\)</span></p>
+<ul class="simple">
+<li><p><strong>Est-ce que le vecteur <span class="math notranslate nohighlight">\(u = (2,3,0)\)</span> est combinaison linéaire des vecteurs <span class="math notranslate nohighlight">\(u_1\)</span>, <span class="math notranslate nohighlight">\(u_2\)</span> et <span class="math notranslate nohighlight">\(u_3\)</span> ?</strong></p></li>
+</ul>
+</div>
+<div class="attention dropdown admonition">
+<p class="admonition-title"><font color='blue'>Réponse de l’exercice 3</font></p>
+<p>On a :</p>
+<div class="math notranslate nohighlight">
+\[
+u_1=(1,0,1) ; u_2=(0,1,1) ; u_3=(1,1,0)
+\]</div>
+<ul class="simple">
+<li><p><strong>Est-ce que le vecteur <span class="math notranslate nohighlight">\(E\)</span><span class="math notranslate nohighlight">\((2,3,0)\)</span> est combinaison linéaire des vecteurs <span class="math notranslate nohighlight">\(u_1\)</span>, <span class="math notranslate nohighlight">\(u_2\)</span> et <span class="math notranslate nohighlight">\(u_3\)</span> ?</strong></p></li>
+</ul>
+<p>Le vecteur <span class="math notranslate nohighlight">\(u=(2,3,0)\)</span> est combinaison linéaire des vecteurs <span class="math notranslate nohighlight">\(u_1\)</span>, <span class="math notranslate nohighlight">\(u_2\)</span> et <span class="math notranslate nohighlight">\(u_3\)</span> si</p>
+<p>il existe <span class="math notranslate nohighlight">\(\alpha_1, \alpha_2, \alpha_3 \in \mathbb{R}\)</span> tel que :</p>
+<div class="math notranslate nohighlight">
+\[
+u = \alpha_1E_1 + \alpha_2E_2 + \alpha_3E_3
+\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \begin{cases}
+      2 =\alpha_1 *1 + \alpha_2* 0 + \alpha_3*1\\
+      3 =\alpha_1* 0 + \alpha_2*1 + \alpha_3* 1 \\
+      0 = \alpha_1* 1 + \alpha_2* 1 + \alpha_3* 0 
+    \end{cases} 
+    \Rightarrow
+        \begin{cases}
+      2 =\alpha_1 + \alpha_3\\
+      3 =\alpha_2 + \alpha_3 \\
+      0 = \alpha_1 + \alpha_2
+    \end{cases} 
+        \Rightarrow
+        \begin{cases}
+      \alpha_1 = -\dfrac{1}{2} \\
+      \alpha_2 = \dfrac{1}{2} \\
+      \alpha_3 = \dfrac{5}{2} 
+      \end{cases}
+\end{split}\]</div>
+<p>Donc :</p>
+<div class="math notranslate nohighlight">
+\[
+u = -\dfrac{1}{2}u_1 + \dfrac{1}{2}u_2 + \dfrac{5}{2}u_3
+\]</div>
+</div>
+<div class="admonition-exercice-4 admonition">
+<p class="admonition-title">Exercice 4</p>
+<p>On considère les ensembles suivants</p>
+<p><span class="math notranslate nohighlight">\( 
+E_1 = \left\{  A = \begin{pmatrix}
+a&amp; d\\
+b&amp;c \\
+\end{pmatrix} \in M(2) ~;~ 
+a,b,c, d \in \mathbb{R} ~/~ ac = 1\right\}
+\)</span></p>
+<p><span class="math notranslate nohighlight">\( 
+E_2 = \left\{  A = \begin{pmatrix}
+a&amp; a &amp; c\\
+b&amp; d &amp; a\\
+b&amp; d &amp; a
+\end{pmatrix} \in M(3) ~;~
+a,b,c, d \in \mathbb{R} ~/~ ab-c = 2\right\}
+\)</span></p>
+<p><span class="math notranslate nohighlight">\( 
+E_3 = \left\{  A \in M(2) ~;~
+A' = -A \right\}
+\)</span></p>
+<p><span class="math notranslate nohighlight">\( 
+E_4 = \left\{  A \in M(3) ~;~
+A' = A \right\}
+\)</span></p>
+<p>tels que <span class="math notranslate nohighlight">\(M(2)\)</span>, <span class="math notranslate nohighlight">\(M(3)\)</span> sont resp. les espaces vectoriels des matrices carrées d’ordre 2 et 3.</p>
+<ol class="simple">
+<li><p>Parmi ces ensembles, quels sont ceux qui sont des sous-espaces vectoriels ?</p></li>
+<li><p>Donner, <em>en justifiant vos réponses</em>, une famille génératrice pour chaque sous-espace vectoriel.</p></li>
+</ol>
+</div>
+<div class="attention dropdown admonition">
+<p class="admonition-title"><font color='blue'>Réponse de l’exercice 4</font></p>
+<p>On a :</p>
+<ol class="simple">
+<li><p>Parmi ces ensembles, quels sont ceux qui sont des sous-espaces vectoriels ?</p></li>
+</ol>
+<p><span class="math notranslate nohighlight">\( 
+E_1 = \left\{  A = \begin{pmatrix}
+a&amp; d\\
+b&amp;c \\
+\end{pmatrix} \in M(2) ~;~ 
+a,b,c, d \in \mathbb{R} ~/~ ac = 1\right\}
+\)</span></p>
+<p><span class="math notranslate nohighlight">\(E_1\)</span> est-il un sous-espace vectoriel !?</p>
+<p><span class="math notranslate nohighlight">\( 
+E_2 = \left\{  A = \begin{pmatrix}
+a&amp; a &amp; c\\
+b&amp; d &amp; a\\
+b&amp; d &amp; a
+\end{pmatrix} \in M(3) ~;~
+a,b,c, d \in \mathbb{R} ~/~ ab-c = 2\right\}
+\)</span></p>
+<p><span class="math notranslate nohighlight">\(E_2\)</span> est-il un sous-espace vectoriel !?</p>
+<p><span class="math notranslate nohighlight">\( 
+E_3 = \left\{  A \in M(2) ~;~
+A' = -A \right\}
+\)</span></p>
+<p><span class="math notranslate nohighlight">\(E_3\)</span> est-il un sous-espace vectoriel !?</p>
+<p><span class="math notranslate nohighlight">\( 
+E_4 = \left\{  A \in M(3) ~;~
+A' = A \right\}
+\)</span></p>
+<p><span class="math notranslate nohighlight">\(E_4\)</span> est-il un sous-espace vectoriel !?</p>
+</div>
+</div>
+<div class="section" id="famille-libre">
+<h3>4. Famille libre<a class="headerlink" href="#famille-libre" title="Lien permanent vers ce titre">¶</a></h3>
+<div class="admonition-exercice-5 admonition">
+<p class="admonition-title">Exercice 5</p>
+<p>** Les familles de vecteurs suivantes sont-elles libres ou liées ? **</p>
+<ol class="simple">
+<li><p><span class="math notranslate nohighlight">\(e_1=(0,1,3)\)</span>, <span class="math notranslate nohighlight">\(e_2=(-1,1,0)\)</span> et <span class="math notranslate nohighlight">\(e_3=(-2,0,5)\)</span> dans <span class="math notranslate nohighlight">\(\mathbb{R}^3\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(e_1=(0,1,1)\)</span>, <span class="math notranslate nohighlight">\(e_2=(1,1,0)\)</span> et <span class="math notranslate nohighlight">\(e_3=(1,1,1)\)</span> dans <span class="math notranslate nohighlight">\(\mathbb{R}^3\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(e_1=(5,1,-1,0)\)</span>, <span class="math notranslate nohighlight">\(e_2(0,-1,3,7)\)</span> et <span class="math notranslate nohighlight">\(e_3=(8,1,-1,7)\)</span> dans <span class="math notranslate nohighlight">\(\mathbb{R}^4\)</span>.</p></li>
+</ol>
+</div>
+<div class="attention dropdown admonition">
+<p class="admonition-title"><font color='blue'>Réponse de l’exercice 5</font></p>
+<p>Les familles de vecteurs suivantes sont-elles libres ou liées ?</p>
+<ol class="simple">
+<li><p><span class="math notranslate nohighlight">\(e_1=(0,1,3)\)</span>, <span class="math notranslate nohighlight">\(e_2=(-1,1,0)\)</span> et <span class="math notranslate nohighlight">\(e_3=(-2,0,5)\)</span> dans <span class="math notranslate nohighlight">\(\mathbb{R}^3\)</span>.</p></li>
+</ol>
+<p><span class="math notranslate nohighlight">\( S = \left\{  e_1, e_2, e_3 \right\} \)</span> est libre dans <span class="math notranslate nohighlight">\(\mathbb{R}^3\)</span> si</p>
+<p><span class="math notranslate nohighlight">\(\exists! (\alpha_1, \alpha_2, \alpha_3) \in \mathbb{R}^3\)</span> : <span class="math notranslate nohighlight">\(\alpha_1 e_1 + \alpha_2 e_2 + \alpha_3 e_3= (0,0,0) \Rightarrow \alpha_1= \alpha_2 = \alpha_3 = 0 \)</span></p>
+</div>
+<div class="admonition-exercice-6 admonition">
+<p class="admonition-title">Exercice 6</p>
+<p><strong>Les familles de vecteurs <span class="math notranslate nohighlight">\(e_1\)</span>, <span class="math notranslate nohighlight">\(e_2\)</span> et <span class="math notranslate nohighlight">\(e_3\)</span> forment-elles des bases de  <span class="math notranslate nohighlight">\(\mathbb{R}^3\)</span> dans chacun des cas suivants ?</strong></p>
+<ol class="simple">
+<li><p><span class="math notranslate nohighlight">\(e_1 =(0,1,0)\)</span>, <span class="math notranslate nohighlight">\(e_2 =(-1,1,1)\)</span> et <span class="math notranslate nohighlight">\(e_3 =(1,0,5)\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(e_1=(1,0,-1)\)</span>, <span class="math notranslate nohighlight">\(e_2=(-1,1,0)\)</span> et <span class="math notranslate nohighlight">\(e_3=(1,0,2)\)</span>.</p></li>
+</ol>
+</div>
+<div class="attention dropdown admonition">
+<p class="admonition-title"><font color='blue'>Réponse de l’exercice 6</font></p>
+<p>Les familles de vecteurs suivantes sont-elles libres ?</p>
+<ol class="simple">
+<li><p><font color='red'>Pour <span class="math notranslate nohighlight">\(e_1 =(0,1,0)\)</span>, <span class="math notranslate nohighlight">\(e_2 =(-1,1,1)\)</span> et <span class="math notranslate nohighlight">\(e_3 =(1,0,5)\)</span></font></p></li>
+</ol>
+<p>Posons : <span class="math notranslate nohighlight">\(S_1 = \left\{  e_1, e_2, e_3 \right\} \)</span></p>
+<p><span class="math notranslate nohighlight">\(S_1 = \left\{  e_1, e_2, e_3 \right\} \)</span> forme une base de <span class="math notranslate nohighlight">\(\mathbb{R}^3\)</span> si <span class="math notranslate nohighlight">\(S_1 = \left\{  e_1, e_2, e_3 \right\} \)</span> est libre</p>
+<p>Ainsi, pour montrer que <span class="math notranslate nohighlight">\(S_1 = \left\{  e_1, e_2, e_3 \right\} \)</span> est une base, il suffit de montrer que <span class="math notranslate nohighlight">\(S_1 = \left\{  e_1, e_2, e_3 \right\} \)</span> est libre.</p>
+<p>Soit alors <span class="math notranslate nohighlight">\(\alpha_1, \alpha_2,\alpha_3 \in \mathbb{R}\)</span> :</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\alpha_1 e_1 + \alpha_2 e_2 + \alpha_3 e_3= (0,0,0) \Rightarrow 
+    \begin{cases}
+      \alpha_1*0 + \alpha_2* (-1) +\alpha_3*1= 0 \\
+      \alpha_1*1 + \alpha_2*1 + \alpha_3*0= 0 \\
+      \alpha_1*0 + \alpha_2*1 + \alpha_3*5= 0 
+      \end{cases}
+\Rightarrow        
+       \begin{cases}
+      \alpha_1 = 0 \\
+      \alpha_2 = 0 \\
+      \alpha_3 = 0 
+      \end{cases}
+\end{split}\]</div>
+<p>Donc la famille de vecteurs <span class="math notranslate nohighlight">\(S_1 = \left\{  e_1, e_2, e_3 \right\} \)</span> forme une base de <span class="math notranslate nohighlight">\(\mathbb{R}^3\)</span></p>
+<p>2- <font color='red'> Pour <span class="math notranslate nohighlight">\(e_1=(1,0,-1)\)</span>, <span class="math notranslate nohighlight">\(e_2=(-1,1,0)\)</span> et <span class="math notranslate nohighlight">\(e_3=(1,0,2)\)</span></font></p>
+<p>Posons : <span class="math notranslate nohighlight">\(S_2 = \left\{  e_1, e_2, e_3 \right\} \)</span></p>
+<p>Montrons alors que <span class="math notranslate nohighlight">\(S_2 = \left\{  e_1, e_2, e_3 \right\} \)</span> forme une base de <span class="math notranslate nohighlight">\(\mathbb{R}^3\)</span></p>
+<p>Soit <span class="math notranslate nohighlight">\(\alpha_1, \alpha_2,\alpha_3 \in \mathbb{R}\)</span> :</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\alpha_1 e_1 + \alpha_2 e_2 + \alpha_3 e_3= (0,0,0) \Rightarrow 
+    \begin{cases}
+      \alpha_1*1+ \alpha_2* (-1) +\alpha_3*1= 0 \\
+      \alpha_1*0 + \alpha_2*1 + \alpha_3*0= 0 \\
+      \alpha_1*(-1) + \alpha_2*0 + \alpha_3*2= 0 
+      \end{cases}
+\Rightarrow        
+       \begin{cases}
+      \alpha_1 = 0 \\
+      \alpha_2 = 0 \\
+      \alpha_3 = 0 
+      \end{cases}
+\end{split}\]</div>
+<p>Donc la famille de vecteurs <span class="math notranslate nohighlight">\(S_2 = \left\{  e_1, e_2, e_3 \right\} \)</span> forme une base de <span class="math notranslate nohighlight">\(\mathbb{R}^3\)</span></p>
+</div>
+<div class="admonition-exercice-7 admonition">
+<p class="admonition-title">Exercice 7</p>
+<p>Sous quelles conditions sur le paramètre <span class="math notranslate nohighlight">\(\lambda\)</span> , les vecteurs <span class="math notranslate nohighlight">\(e_1(\lambda, 1,0)\)</span>,  <span class="math notranslate nohighlight">\(e_2(-1,1, 2)\)</span> et
+<span class="math notranslate nohighlight">\(e_3(0, 1, -1)\)</span> forment-ils une base de <span class="math notranslate nohighlight">\(\mathbb{R}^3\)</span> ?</p>
+</div>
+<div class="attention dropdown admonition">
+<p class="admonition-title"><font color='blue'>Réponse de l’exercice 7</font></p>
+<p>Posons : <span class="math notranslate nohighlight">\(S = \left\{  e_1, e_2, e_3 \right\} \)</span></p>
+<div class="math notranslate nohighlight">
+\[
+ 
+ S = \left\{  e_1, e_2, e_3 \right\} ~forme ~une ~ base ~ de ~ \mathbb{R}^3 \Leftrightarrow (\alpha_1 e_1 + \alpha_2 e_2 + \alpha_3 e_3= (0,0,0) \Rightarrow \alpha_1 =\alpha_2= \alpha_3 = 0)
+ 
+ \]</div>
+<p>Soit alors <span class="math notranslate nohighlight">\(\alpha_1, \alpha_2,\alpha_3 \in \mathbb{R}\)</span> :</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\alpha_1 e_1 + \alpha_2 e_2 + \alpha_3 e_3= (0,0,0) \Rightarrow 
+    \begin{cases}
+      \alpha_1*\lambda+ \alpha_2* (-1) +\alpha_3*0= 0 \\
+      \alpha_1*1 + \alpha_2*1 + \alpha_3*1= 0 \\
+      \alpha_1*0 + \alpha_2*2 + \alpha_3*(-1)= 0 
+      \end{cases}
+\Rightarrow        
+    \begin{cases}
+      \lambda*\alpha_1- \alpha_2= 0 \\
+      \alpha_1 + \alpha_2 + \alpha_3= 0 \\
+      2\alpha_2 - \alpha_3= 0 
+      \end{cases}
+\end{split}\]</div>
+<p>Donc la famille de vecteurs <span class="math notranslate nohighlight">\(S = \left\{  e_1, e_2, e_3 \right\} \)</span> forme une base de <span class="math notranslate nohighlight">\(\mathbb{R}^3\)</span> <span class="math notranslate nohighlight">\(\Leftrightarrow\)</span>  <span class="math notranslate nohighlight">\(\lambda = \)</span></p>
+</div>
+</div>
+<div class="section" id="base">
+<h3>3. base<a class="headerlink" href="#base" title="Lien permanent vers ce titre">¶</a></h3>
+<div class="admonition-exercice-8 admonition">
+<p class="admonition-title">Exercice 8</p>
+<p>Soit <span class="math notranslate nohighlight">\(e_1 = (1,0,1)\)</span>, <span class="math notranslate nohighlight">\(e_2= (-1,1,0)\)</span>, <span class="math notranslate nohighlight">\(e_3 = (-1,1,1)\)</span></p>
+<ul class="simple">
+<li><p>Montrer que la famille {<span class="math notranslate nohighlight">\(e_1\)</span>, <span class="math notranslate nohighlight">\(e_2\)</span>, <span class="math notranslate nohighlight">\(e_3\)</span>} constitue une base de <span class="math notranslate nohighlight">\(\mathbb{R}^3\)</span></p></li>
+<li><p>Exprimer les coordonnées du vecteur (1,2,3) dans cette base</p></li>
+</ul>
+</div>
+<div class="attention dropdown admonition">
+<p class="admonition-title"><font color='blue'>Réponse de l’exercice 8</font></p>
+<p>Soit <span class="math notranslate nohighlight">\(e_1 = (1,0,1)\)</span>, <span class="math notranslate nohighlight">\(e_2= (-1,1,0)\)</span>, <span class="math notranslate nohighlight">\(e_3 = (-1,1,1)\)</span></p>
+<ul class="simple">
+<li><p>Montrons que la famille {<span class="math notranslate nohighlight">\(e_1\)</span>, <span class="math notranslate nohighlight">\(e_2\)</span>, <span class="math notranslate nohighlight">\(e_3\)</span>} constitue une base de <span class="math notranslate nohighlight">\(\mathbb{R}^3\)</span>.</p></li>
+</ul>
+<p>Posons : <span class="math notranslate nohighlight">\(S= \left\{  e_1, e_2, e_3 \right\}\)</span></p>
+<p>S est une base de <span class="math notranslate nohighlight">\(\mathbb{R}^3\)</span> ssi S est libre.</p>
+<p>Soit alors <span class="math notranslate nohighlight">\(\alpha_1, \alpha_2,\alpha_3 \in \mathbb{R}\)</span> :</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\alpha_1 e_1 + \alpha_2 e_2 + \alpha_3 e_3= (0,0,0) \Rightarrow 
+    \begin{cases}
+      \alpha_1*1 + \alpha_2* (-1) +\alpha_3*(-1)= 0 \\
+      \alpha_1*0 + \alpha_2*1 + \alpha_3*1= 0 \\
+      \alpha_1*1 + \alpha_2*0 + \alpha_3*1= 0 
+      \end{cases}
+\Rightarrow        
+       \begin{cases}
+      \alpha_1 = 0 \\
+      \alpha_2 = 0 \\
+      \alpha_3 = 0 
+      \end{cases}
+\end{split}\]</div>
+<p>Donc la famille {<span class="math notranslate nohighlight">\(e_1\)</span>, <span class="math notranslate nohighlight">\(e_2\)</span>, <span class="math notranslate nohighlight">\(e_3\)</span>} constitue une base de <span class="math notranslate nohighlight">\(\mathbb{R}^3\)</span>.</p>
+<ul class="simple">
+<li><p>Exprimons les coordonnées du vecteur <span class="math notranslate nohighlight">\(E = (1,2,3)\)</span> dans cette base.</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+E = \lambda_1 e_1 + \lambda_2 e_2 + \lambda_3 e_3
+\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+E = \lambda_1 e_1 + \lambda_2 e_2 + \lambda_3 e_3 \Rightarrow 
+    \begin{cases}
+      \lambda_1*1 + \lambda_2* (-1) +\lambda_3*(-1)= 1 \\
+      \lambda_1*0 + \lambda_2*1 + \lambda_3*1= 2 \\
+      \lambda_1*1 + \lambda_2*0 + \lambda_3*1= 3 
+      \end{cases}
+\end{split}\]</div>
+<p>Donc :</p>
+<div class="math notranslate nohighlight">
+\[
+E = \lambda_1 e_1 + \lambda_2 e_2 + \lambda_3 e_3
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+E = \lambda_1 e_1 + \lambda_2 e_2 + \lambda_3 e_3
+\]</div>
+</div>
+</div>
+<div class="section" id="famille-generatrice">
+<h3>4. Famille génératrice<a class="headerlink" href="#famille-generatrice" title="Lien permanent vers ce titre">¶</a></h3>
+<div class="admonition-exercice-9 admonition">
+<p class="admonition-title">Exercice 9</p>
+<ul class="simple">
+<li><p>La famille de vecteurs <span class="math notranslate nohighlight">\(E = \left\{(1; 1; 0); (1;-1; 0); (1; 0; -1)\right\}\)</span> est-elle une famille génératrice de <span class="math notranslate nohighlight">\(\mathbb{R}^3\)</span> ? <em>Justifier</em></p></li>
+</ul>
+</div>
+<div class="attention dropdown admonition">
+<p class="admonition-title"><font color='blue'>Réponse de l’exercice 9</font></p>
+<p><span class="math notranslate nohighlight">\(E = \left\{(1; 1; 0); (1;-1; 0); (1; 0; -1)\right\}\)</span> est-elle une famille génératrice de <span class="math notranslate nohighlight">\(\mathbb{R}^3\)</span> ?</p>
+<p>On pose : <span class="math notranslate nohighlight">\(v_1 = (1; 1; 0)\)</span>; <span class="math notranslate nohighlight">\(v_2=(1;-1; 0)\)</span> ; <span class="math notranslate nohighlight">\(v_3= (1; 0; -1)\)</span></p>
+<p>La famille {<span class="math notranslate nohighlight">\(v_1\)</span>, <span class="math notranslate nohighlight">\(v_2\)</span>, <span class="math notranslate nohighlight">\(v_3\)</span>} est-elle génératrice de <span class="math notranslate nohighlight">\(\mathbb{R}^3\)</span> ?</p>
+<p>La famille {<span class="math notranslate nohighlight">\(v_1\)</span>, <span class="math notranslate nohighlight">\(v_2\)</span>, <span class="math notranslate nohighlight">\(v_3\)</span>} est génératrice de <span class="math notranslate nohighlight">\(\mathbb{R}^3\)</span></p>
+<p>Pour n’importe quel vecteur <span class="math notranslate nohighlight">\(v = (x, y,z)\)</span> de <span class="math notranslate nohighlight">\(\mathbb{R}^3\)</span>, on doit trouver a,b, c <span class="math notranslate nohighlight">\(\in\)</span> <span class="math notranslate nohighlight">\(\mathbb{R}\)</span> tels que</p>
+<div class="math notranslate nohighlight">
+\[
+av_1 +bv_2 +cv_3 = v
+\]</div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="intro.html" title="précédent page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">précédent</p>
+            <p class="prev-next-title">Pr. Jouilil Youness</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="S%C3%A9rie2.html" title="suivant page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">suivant</p>
+        <p class="prev-next-title">Série 2 : Application linéaire</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      Par Prof. Jouilil Youness<br/>
+    
+        &copy; droits d'auteur 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,1284 @@
+
+<!DOCTYPE html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chapitre 1 : Complément sur les séries chronologiques &#8212; INSEA de Rabat</title>
+    
+  <link href="../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/translations.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Recherche" href="../../search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="fr">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">INSEA de Rabat</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Rechercher dans ce livre ..." aria-label="Rechercher dans ce livre ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../intro.html">
+   Pr. Jouilil Youness
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Chapitre1.html">
+   Chapitre 1 : Complément sur les séries chronologiques
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Chapitre2.html">
+   Chapitre 2 : Les processus aléatoires non stationnaires
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Chapitre3.html">
+   Chapitre 3 : Tests de Cointégration et MCE
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Chapitre4.html">
+   Chapitre 3 : Causalité au sens de Granger
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Chapitre5.html">
+   Chapitre 4 : Séries temporelles cointégrées
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Chapitre6.html">
+   Chapitre 5 : Modèles à correction d’erreurs et tests de cointégration
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Chapitre7.html">
+   Chapitre 5 : Modèles à correction d’erreurs et tests de cointégration
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Basculer la navigation" aria-controls="site-navigation"
+                title="Basculer la navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Téléchargez cette page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/serieschronoavancees/book/Chapitre1.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Télécharger le fichier source" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Imprimer au format PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/executablebooks/jupyter-book"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Dépôt source"><i
+                    class="fab fa-github"></i>dépôt</button></a>
+        <a class="issues-button"
+            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fserieschronoavancees/book/Chapitre1.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Ouvrez un problème"><i class="fas fa-lightbulb"></i>signaler un problème</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Mode plein écran"
+        title="Mode plein écran"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contenu
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#complement-sur-les-series-chronologiques">
+   Complément sur les séries chronologiques
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#rappels-et-concepts-de-base">
+     1. Rappels et concepts de base
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#decomposition-dune-serie-chronologique">
+     2. Décomposition d’une série chronologique
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#causalite-and-invisibilite">
+     3. Causalité and invisibilité
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#processus-stationnaire">
+     4. Processus stationnaire
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#stationnairite-au-sens-stricte">
+       4.1. Stationnairité au sens stricte
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#stationnairite-au-au-second-ordre">
+       4.2. Stationnairité au au second ordre
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#white-noise">
+       4.3. White Noise
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#les-modeles-des-series-temporelles">
+     5. Les modèles des séries temporelles
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#le-processus-moyenne-mobile">
+       5.1. Le processus moyenne mobile
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#le-processus-autoregressif">
+       5.2. Le processus autorégressif
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#autoregressive-moving-average-model">
+       5.3. Autoregressive moving average model
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#autoregressive-integrated-moving-average-model">
+       5.4. Autoregressive integrated moving average model
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#prevision-des-series-temporelles">
+     6. Prévision des séries temporelles
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#naive-forecast">
+       6.1. Naive forecast
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#simple-average">
+       6.2. Simple average
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#algorithme-de-box-jenkins">
+       6.3. Algorithme de Box &amp; Jenkins
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#modelling-time-process">
+     Modelling time process
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Chapitre 1 : Complément sur les séries chronologiques</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contenu </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#complement-sur-les-series-chronologiques">
+   Complément sur les séries chronologiques
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#rappels-et-concepts-de-base">
+     1. Rappels et concepts de base
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#decomposition-dune-serie-chronologique">
+     2. Décomposition d’une série chronologique
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#causalite-and-invisibilite">
+     3. Causalité and invisibilité
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#processus-stationnaire">
+     4. Processus stationnaire
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#stationnairite-au-sens-stricte">
+       4.1. Stationnairité au sens stricte
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#stationnairite-au-au-second-ordre">
+       4.2. Stationnairité au au second ordre
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#white-noise">
+       4.3. White Noise
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#les-modeles-des-series-temporelles">
+     5. Les modèles des séries temporelles
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#le-processus-moyenne-mobile">
+       5.1. Le processus moyenne mobile
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#le-processus-autoregressif">
+       5.2. Le processus autorégressif
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#autoregressive-moving-average-model">
+       5.3. Autoregressive moving average model
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#autoregressive-integrated-moving-average-model">
+       5.4. Autoregressive integrated moving average model
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#prevision-des-series-temporelles">
+     6. Prévision des séries temporelles
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#naive-forecast">
+       6.1. Naive forecast
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#simple-average">
+       6.2. Simple average
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#algorithme-de-box-jenkins">
+       6.3. Algorithme de Box &amp; Jenkins
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#modelling-time-process">
+     Modelling time process
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="section" id="chapitre-1-complement-sur-les-series-chronologiques">
+<h1>Chapitre 1 : Complément sur les séries chronologiques<a class="headerlink" href="#chapitre-1-complement-sur-les-series-chronologiques" title="Lien permanent vers ce titre">¶</a></h1>
+<div class="section" id="complement-sur-les-series-chronologiques">
+<h2>Complément sur les séries chronologiques<a class="headerlink" href="#complement-sur-les-series-chronologiques" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="section" id="rappels-et-concepts-de-base">
+<h3>1. Rappels et concepts de base<a class="headerlink" href="#rappels-et-concepts-de-base" title="Lien permanent vers ce titre">¶</a></h3>
+<div class="admonition-definition admonition">
+<p class="admonition-title">Définition</p>
+<p><i>On appelle série chronologique ou temporelle ou encore chronique une suite d’observations chiffrées d’un même phénomène et ordonnées dans le temps (t).</i></p>
+<div class="math notranslate nohighlight">
+\[
+Y = \lbrace Y_t ~~; ~~t \in \Theta \rbrace
+\]</div>
+</div>
+<div class="admonition-frequence-d-observation admonition">
+<p class="admonition-title">Fréquence d’observation</p>
+<p>Les dates d’observations sont généralement ordonnées de manière régulière dans le temps (t).</p>
+<p>Le temps est défini comme variable discrète et les données observées peuvent être des secondes, minutes, heures, jours, semestres, années …etc. On parle alors de fréquence de données.</p>
+</div>
+<p><strong>Exemple</strong> :</p>
+<p>Série chronologique économique : PIB, taux d’inflation .</p>
+<p>Série chronologique financière : CAC40, Oil .</p>
+<div class="admonition-pourquoi-analyse-t-on-les-sc admonition">
+<p class="admonition-title">Pourquoi analyse t-on les SC ?</p>
+<p>L’objectif de l’analyse des séries chroniques est :</p>
+<ul class="simple">
+<li><p>Comprendre</p></li>
+<li><p>Modéliser</p></li>
+<li><p>Prévenir et contrôler</p></li>
+</ul>
+</div>
+<div class="admonition-serie-chronologique-univariee admonition">
+<p class="admonition-title">Série chronologique univariée</p>
+<p><i> Une série chronologique univariée peut être représentée par : </i></p>
+<div class="math notranslate nohighlight">
+\[
+Y = \lbrace (Y_t, t) : t \in \mathbb{N}, Y_t \in \mathbb{R} \rbrace ~ avec ~  Y: \mathbb{N} \rightarrow \mathbb{R}
+\]</div>
+<p><i>Ainsi, une série temporelle univariée se limite à l’évolution d’une variable unique dans le temps.&lt;\i&gt;</p>
+</div>
+<div class="admonition-serie-chronologique-multivariee admonition">
+<p class="admonition-title">Série chronologique multivariée</p>
+<p><i> Une série chronologique multivariée peut être représentée par :&lt;\i&gt;</p>
+<div class="math notranslate nohighlight">
+\[
+Y = \lbrace (Y_t, t) : t \in \mathbb{N}, Y_t \in \mathbb{R}^{p} \rbrace ~ avec ~  Y: \mathbb{N} \rightarrow \mathbb{R}^{p}
+\]</div>
+<p><i> Une série chronologique multivariée regroupe plusieurs séries univariées. Elle permet d’identifier les corrélations entre plusieurs variables évoluant dans le temps.</i></p>
+</div>
+</div>
+<div class="section" id="decomposition-dune-serie-chronologique">
+<h3>2. Décomposition d’une série chronologique<a class="headerlink" href="#decomposition-dune-serie-chronologique" title="Lien permanent vers ce titre">¶</a></h3>
+<div class="admonition-decomposition-dune-serie-chronologique admonition">
+<p class="admonition-title">Décomposition d’une série chronologique</p>
+<p>Un série temporelle  <span class="math notranslate nohighlight">\(Y_t\)</span>  repose sur la décomposition de la variable observée selon le temps en plusieurs composantes :</p>
+<ul class="simple">
+<li><p>la tendance (Trend component ou encore Trend-Cycle)  <span class="math notranslate nohighlight">\(T_t\)</span> : observée sur une longue durée, elle traduit l’orientation (baisse ou hausse) générale de la série étudiée</p></li>
+<li><p>La composante saisonnière (Seasonality component) <span class="math notranslate nohighlight">\(S_t\)</span> : variation due à un effet momentané se reproduisant à intervalles réguliers</p></li>
+<li><p>La composante résiduelle (Noise term) <span class="math notranslate nohighlight">\(\eta_t\)</span> : correspond à des fluctuations irrégulières, en général de faible intensité mais de nature aléatoire. On parle aussi  de ou bruit ou résidu</p></li>
+</ul>
+<p>Ces éléments peuvent s’associer de manière :</p>
+<ul class="simple">
+<li><p>Additive : <span class="math notranslate nohighlight">\(Y_t = T_t + S_t + \eta_t\)</span></p></li>
+<li><p>Multiplicative : <span class="math notranslate nohighlight">\(Y_t = T_t \times S_t  \times \eta_t\)</span></p></li>
+</ul>
+</div>
+<div class="admonition-remarque admonition">
+<p class="admonition-title">Remarque</p>
+<p>The main interest of this decomposition is to understand and better describe the evolution of the series studied, and on the other hand to forecast their evolution over time (based on the trend and seasonal variations).</p>
+</div>
+</div>
+<div class="section" id="causalite-and-invisibilite">
+<h3>3. Causalité and invisibilité<a class="headerlink" href="#causalite-and-invisibilite" title="Lien permanent vers ce titre">¶</a></h3>
+<div class="admonition-definition admonition">
+<p class="admonition-title">Définition</p>
+<p>Un processus stochastique <span class="math notranslate nohighlight">\((Y_t)\)</span> est dit causal si il existe une constante <span class="math notranslate nohighlight">\(\psi_j\)</span> telle que :</p>
+<div class="math notranslate nohighlight">
+\[
+Y_t = \sum_{j=1}^{\infty} \psi_j \eta_{t-j} ~~~~~,~~~~ t \in \mathbb{Z}
+\]</div>
+<p>Avec <span class="math notranslate nohighlight">\(\eta_j\)</span> est un bruit blanc de moyenne nulle et de variance <span class="math notranslate nohighlight">\(\sigma^2\)</span> et <span class="math notranslate nohighlight">\( \sum_{j=1}^{\infty} |\psi_j| &lt; \infty\)</span></p>
+</div>
+<div class="admonition-definition admonition">
+<p class="admonition-title">Définition</p>
+<p>Un processus stochastique <span class="math notranslate nohighlight">\((Y_t)\)</span> est dit inversible si il existe une constante <span class="math notranslate nohighlight">\(\pi_j\)</span> telle que :</p>
+<div class="math notranslate nohighlight">
+\[
+Y_t = \sum_{j=1}^{\infty} \pi_j Y_{t-j} ~~~~~,~~~~ t \in \mathbb{Z}
+\]</div>
+<p>Avec <span class="math notranslate nohighlight">\(\eta_j\)</span> est un bruit blanc de moyenne nulle et de variance <span class="math notranslate nohighlight">\(\sigma^2\)</span> et <span class="math notranslate nohighlight">\( \sum_{j=1}^{\infty} |\pi_j| &lt; \infty\)</span></p>
+</div>
+</div>
+<div class="section" id="processus-stationnaire">
+<h3>4. Processus stationnaire<a class="headerlink" href="#processus-stationnaire" title="Lien permanent vers ce titre">¶</a></h3>
+<p>La stationnairité est la propriété d’une ST à garder ses caractéristiques inchangées au passage du temps. Elle implique l’absence de tendance dans les données ainsi qu’une moyenne et variance constantes pour la ST. On distingue deux types de stationnarité :</p>
+<div class="section" id="stationnairite-au-sens-stricte">
+<h4>4.1. Stationnairité au sens stricte<a class="headerlink" href="#stationnairite-au-sens-stricte" title="Lien permanent vers ce titre">¶</a></h4>
+<div class="admonition-definition admonition">
+<p class="admonition-title">Définition</p>
+<p><i>Un processus <span class="math notranslate nohighlight">\(\lbrace Y_t, {t \in T}\rbrace\)</span>, est stationnaire au sens stricte si : </i></p>
+<div class="math notranslate nohighlight">
+\[
+{(Y_{t_{1}}, Y_{t_{2}}, \ldots, Y_{t_{k}})}^{t} \stackrel{\text{d}}{=} {(Y_{t_{1}+\tau}, Y_{t_{2}+ \tau}, \ldots, Y_{t_{k}+ \tau})}^{t}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\mathbb{P}(Y_{t_{1}} \leq y_{1}, \ldots ,Y_{t_{k}} \leq y_{k} ) =             \mathbb{P}(Y_{t_{1}+\tau} \leq y_{1}, \ldots ,Y_{t_{k}+\tau} \leq y_{k} ) 
+\]</div>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\tau \in \mathbb{Z}\)</span> ,  <span class="math notranslate nohighlight">\((t_1, \ldots, t_k)\)</span> set of time indices, k <span class="math notranslate nohighlight">\(\in \mathbb{N}^{*}\)</span>,  <span class="math notranslate nohighlight">\((t_1, \ldots, t_k) \in\)</span> T ,  <span class="math notranslate nohighlight">\((t_1+\tau, \ldots, t_k+\tau) \in\)</span> T et <span class="math notranslate nohighlight">\(\stackrel{\text{d}}{=}\)</span> indicates equality in distribution.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="stationnairite-au-au-second-ordre">
+<h4>4.2. Stationnairité au au second ordre<a class="headerlink" href="#stationnairite-au-au-second-ordre" title="Lien permanent vers ce titre">¶</a></h4>
+<div class="admonition-stationnairite-au-au-second-ordre admonition">
+<p class="admonition-title">Stationnairité au au second ordre</p>
+<p><i>Le processus Y = <span class="math notranslate nohighlight">\(\lbrace Y_t , {t \in \mathbb{Z}\rbrace}\)</span>, est stationnaire au second ordre ou  au sens faible (wide-sense stationary) si :</i></p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\mathbb{E}(Y_t) = cst ~~,~~ \forall t \in \mathbb{Z}\)</span> indépendant de t</p></li>
+<li><p><span class="math notranslate nohighlight">\(E(Y^2_t) &lt; \infty ~~,~~ \forall t \in \mathbb{Z}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\gamma_Y (k) = Cov(Y_t, Y_{t-k})  ~~,~~ \forall t \in \mathbf{Z}, \forall k \in \mathbb{Z}\)</span> est indépendant de t.</p></li>
+</ul>
+</div>
+<div class="tip admonition">
+<p class="admonition-title">Remarque</p>
+<p><i>Un processus <span class="math notranslate nohighlight">\({Y_t}\)</span> est faiblement stationnaire si ses moments ne dépend pas du temps.</i></p>
+</div>
+<p>On pratique, la stationnairité au second ordre est la plus utilisée dans l’analyse des ST et elle est souvent appelée stationnairité en covariance.</p>
+</div>
+<div class="section" id="white-noise">
+<h4>4.3. White Noise<a class="headerlink" href="#white-noise" title="Lien permanent vers ce titre">¶</a></h4>
+<div class="admonition-definition admonition">
+<p class="admonition-title">Définition</p>
+<p><i>Le processus stochastique <span class="math notranslate nohighlight">\(\lbrace \eta_t \rbrace_{t \in \mathbb{Z}}\)</span>, est un bruit blanc (white noise)  si : </i></p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\mathbb{E}(\eta_t) = 0 ~~,~~ \forall t \in \mathbb{Z}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\mathbb{E}(\eta^2_t) = \sigma^2 ~~,~~ \forall t \in \mathbb{Z}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(Cov(\eta_t, \eta_{t-k}) = 0 ~~,~~ \forall t \in \mathbb{Z}, \forall k \in \mathbb{Z}^{*}\)</span></p></li>
+</ul>
+<p><i>On note <span class="math notranslate nohighlight">\((\eta_t) \sim bb(0, \sigma^2 )\)</span></i></p>
+</div>
+<div class="tip admonition">
+<p class="admonition-title">Remarque</p>
+<p>Le processus stochastique <span class="math notranslate nohighlight">\(\lbrace \eta_t \rbrace_{t \in \mathbb{Z}}\)</span>, est un bruit blanc gaussien si <span class="math notranslate nohighlight">\(\eta_t\)</span> <span class="math notranslate nohighlight">\(\sim\)</span> i.i.d <span class="math notranslate nohighlight">\(N(0, \sigma^2)\)</span></p>
+</div>
+<div class="warning admonition">
+<p class="admonition-title">Exemple 1</p>
+<p>On considère le modèle suivant :</p>
+<div class="math notranslate nohighlight">
+\[
+    Y_t = \eta_t + 2\eta_{t-1}
+\]</div>
+<p>Avec <span class="math notranslate nohighlight">\(\eta_t \stackrel{i.i.d}{\sim} ( 0, \sigma^2)\)</span> et <span class="math notranslate nohighlight">\(t \in \mathbb{Z}\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \mathbb{E}(Y_t) &amp;=  \mathbb{E}( \eta_t + 2\eta_{t-1}) &amp;~~(t ~ \in ~\mathbb{Z})\\
+    &amp; = \mathbb{E}( \eta_t)+2 \mathbb{E}(\eta_{t-1}) &amp;~~(t ~\in ~ \mathbb{Z})\\
+    &amp; = 0 &amp;~~(t ~\in ~\mathbb{Z})
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    Var(Y_t) &amp;= Var( \eta_t + 2\eta_{t-1}) &amp;~~(t ~ \in ~\mathbb{Z})\\
+    &amp; =     Var( \eta_t)+ 2^2 Var(\eta_{t-1})+2 Cov(\eta_t,\eta_{t-1}) &amp;~~(t ~ \in ~\mathbb{Z})\\
+    &amp; = 5\sigma^2 &amp;~~(t ~ \in ~\mathbb{Z})
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\gamma_Y(k) &amp;= Cov(Y_t, Y_{t-k}) \\
+&amp; = Cov( \eta_t + 2\eta_{t-1},  \eta_{t+k} + 2\eta_{t-1+k})\\
+&amp; = Cov( \eta_t,  \eta_{t+k}) + 2Cov( \eta_t, \eta_{t-1+k}) + 2Cov(\eta_{t-1}, \eta_{t+k}) + 4Cov(\eta_{t-1}, \eta_{t-1+k})\\
+&amp; = \sigma^2(\mathbb{1}_{k=0}+2\mathbb{1}_{k=1}+2\mathbb{1}_{k=-1}+4\mathbb{1}_{k=0})\\
+&amp; = \sigma^2(5\mathbb{1}_{k=0}+2\mathbb{1}_{k=1}+2\mathbb{1}_{k=-1})
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\gamma_Y(k)
+&amp; = \left\{
+    \begin{array}{ll}
+      5 \sigma^2   &amp; \mbox{if } k = 0 \\
+    2  \sigma^2 &amp; \mbox{if } k = \pm 1\\
+    0 &amp; \mbox{Otherwise }
+    \end{array}
+\right.
+\end{split}\]</div>
+<p>Ainsi, <span class="math notranslate nohighlight">\(\lbrace Y_t \rbrace_{t \in \mathbb{Z}}\)</span> est stationaraire.</p>
+</div>
+<div class="warning admonition">
+<p class="admonition-title">Exemple 2</p>
+<p>On considère le modèle suivant :</p>
+<div class="math notranslate nohighlight">
+\[
+ y_t = \alpha_0 + \alpha_1 \eta_t + \alpha_2 \eta_{t-1} ~~,~~ t \in \mathbb{Z}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+(\alpha_0, \alpha_1, \alpha_2) \in \mathbf{R}^3~~ ,~~ a_t \stackrel{i.i.d}{\sim} ( 0, \sigma^2)
+\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \mathbb{E}(y_t) &amp;=  \mathbb{E}( \alpha_0 + \alpha_1 \eta_t + \alpha_2 \eta_{t-1}) &amp;~~(t ~ \in ~\mathbb{Z})\\
+    &amp; = \alpha_0  + \alpha_1 \mathbb{E}( \eta_t)+ \alpha_2 \mathbb{E}(\eta_{t-1}) &amp;~~(t ~\in ~ \mathbb{Z})\\
+    &amp; = \alpha_0 &amp;~~(t ~\in ~\mathbb{Z})
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    Var(y_t) &amp;= Var(\alpha_0 + \alpha_1 \eta_t + \alpha_2 \eta_{t-1}) &amp;~~(t ~ \in ~\mathbb{Z})\\
+     &amp;= Var(\alpha_1 \eta_t + \alpha_2 \eta_{t-1}) &amp;~~(t ~ \in ~\mathbb{Z})\\
+    &amp; =   \alpha_1^2  Var( \eta_t)+ \alpha_2^2 Var(\eta_{t-1})+\alpha_1 \alpha_2 Cov(\eta_t,\eta_{t-1}) &amp;~~(t ~ \in ~\mathbb{Z})\\
+    &amp; = (\alpha_1^2 + \alpha_2^2 + \alpha_1 \alpha_1)\sigma^2 &amp;~~(t ~ \in ~\mathbb{Z})
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\gamma_Y(k) &amp;= Cov(y_t, y_{t-k}) \\
+&amp; = Cov(\alpha_0 + \alpha_1 \eta_t + \alpha_2 \eta_{t-1},  \alpha_0 + \alpha_1 \eta_{t+k} + \alpha_2 \eta_{t+k-1})\\
+&amp; = \alpha_1^2Cov( \eta_t,  \eta_{t+k}) + \alpha_1\alpha_2Cov( \eta_t, \eta_{t-1+k}) \\ 
+    &amp;+\alpha_2\alpha_1Cov(\eta_{t-1}, \eta_{t+k}) + \alpha_2^2Cov(\eta_{t-1}, \eta_{t-1+k})\\
+&amp; = \sigma^2((\alpha_1^2 + \alpha_2^2)\mathbb{1}_{k=0}+\alpha_1\alpha_2\mathbb{1}_{k=1}+\alpha_1\alpha_2\mathbb{1}_{k=-1})
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\gamma_Y(k)
+&amp; = \left\{
+    \begin{array}{ll}
+     ( \alpha_1^2 + \alpha_2^2 )\sigma^2   &amp; \mbox{if } k = 0 \\
+    \alpha_1\alpha_2  \sigma^2 &amp; \mbox{if } k = \pm 1\\
+    0 &amp; \mbox{Otherwise }
+    \end{array}
+\right.
+\end{split}\]</div>
+<p>Ainsi, <span class="math notranslate nohighlight">\(\lbrace Y_t \rbrace_{t \in \mathbb{Z}}\)</span> est un processus stationaraire</p>
+</div>
+<div class="warning admonition">
+<p class="admonition-title">Exemple 3</p>
+<p>Supposons que :</p>
+<div class="math notranslate nohighlight">
+\[
+y_t = y_{t-1} + \eta_t ~~ ,~~ \eta_t \stackrel{i.i.d}{\sim} ( 0, \sigma^2)
+\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    y_t = &amp;y_{t-1} + \eta_t ~~ ,~~ \eta_t \stackrel{i.i.d}{\sim} ( 0, \sigma^2) \\
+    =&amp; y_{t-2} + \eta_{t-1} + \eta_t ~~ ,~~ \eta_t \stackrel{i.i.d}{\sim} ( 0, \sigma^2) \\
+     = &amp; y_{t-3} + \eta_{t-2} + \eta_{t-1} + \eta_t ~~ ,~~ \eta_t \stackrel{i.i.d}{\sim} ( 0, \sigma^2) \\
+    &amp;  \vdots \\
+    = &amp; y_0 + \sum_{j=0}^{t-1} \eta_{t-j}  ~~ ,~~ \eta_t \stackrel{i.i.d}{\sim} ( 0, \sigma^2) \\
+\end{split}\]</div>
+<p>Ainsi:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \mathbb{E}(y_t) &amp;=  \mathbb{E}( y_0 + \sum_{j=0}^{t-1} \eta_{t-j} ) &amp;~~(t ~ \in ~\mathbb{Z})\\
+    &amp; = y_0 = cst &amp;~~(t ~\in ~\mathbb{Z})
+\end{split}\]</div>
+<p>Aussi :</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    Var(y_t) &amp;= Var(y_0 + \sum_{j=0}^{t-1} \eta_{t-j}) &amp;~~(t ~ \in ~\mathbb{Z})\\
+     &amp;= Var( \sum_{j=0}^{t-1} \eta_{t-j}) &amp;~~(t ~ \in ~\mathbb{Z})\\
+     &amp;= \sum_{j=0}^{t-1} Var(\eta_{t-j}) &amp;~~(t ~ \in ~\mathbb{Z})\\
+    &amp; = t\sigma^2 &amp;~~(t ~ \in ~\mathbb{Z})
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\gamma_Y(k) &amp;= Cov(y_t, y_{t-k}) \\
+&amp; = Cov(y_0 + \sum_{j=0}^{t-1} \eta_{t-j},  y_0 + \sum_{j=0}^{t-k-1} \eta_{t-j})\\
+&amp; = Cov(\sum_{j=0}^{t-1} \eta_{t-j},  \sum_{j=0}^{t-k-1} \eta_{t-j})\\
+&amp; = \sigma^2  \underset{(t,k)\in \mathbb{Z}^2}{\mathrm{Min(t, t-k)}}
+\end{split}\]</div>
+<p>Ainsi, le processus stochastique   <span class="math notranslate nohighlight">\( \lbrace y_t , {t \in \mathbb{Z}}\rbrace \)</span>,  n’est pas stationnaire.</p>
+</div>
+<div class="tip admonition">
+<p class="admonition-title">corollaire</p>
+<p><span class="math notranslate nohighlight">\(\lbrace \eta_t \rbrace_{t \in \mathbb{Z}} \sim bb( 0, \sigma^2) \Rightarrow \lbrace \eta_t \rbrace_{t \in \mathbb{Z}}\)</span>  un processus faiblement stationnaire</p>
+</div>
+<div class="admonition-transformation-des-st admonition">
+<p class="admonition-title">Transformation des ST</p>
+<ul class="simple">
+<li><p>la transformation logarithmique : Cette technique est utilisée lorsque les données présentent une croissance exponentielle, pour obtenir une ST ayant une croissance linéaire.</p></li>
+<li><p>la différentiation :  est la technique la plus utilisée pour stationnariser les variables : différence première <span class="math notranslate nohighlight">\(\Delta X_t\)</span>, différence seconde <span class="math notranslate nohighlight">\(\Delta^2 X_t\)</span>.</p></li>
+<li><p>la différentiation logarithmique : différence sur les transformations logarithmiques.</p></li>
+</ul>
+</div>
+<div class="tip admonition">
+<p class="admonition-title">Remarque importante</p>
+<ul class="simple">
+<li><p>une ST qui devient stationnaire après différentiation est dit : stationnaire en différence.</p></li>
+<li><p>une ST qui devient stationnaire après d différences est dit : intégrée d’ordre d.</p></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section" id="les-modeles-des-series-temporelles">
+<h3>5. Les modèles des séries temporelles<a class="headerlink" href="#les-modeles-des-series-temporelles" title="Lien permanent vers ce titre">¶</a></h3>
+<div class="section" id="le-processus-moyenne-mobile">
+<h4>5.1. Le processus moyenne mobile<a class="headerlink" href="#le-processus-moyenne-mobile" title="Lien permanent vers ce titre">¶</a></h4>
+<div class="admonition-definition admonition">
+<p class="admonition-title">Définition</p>
+<p><i>On dit que la série chronologique <span class="math notranslate nohighlight">\(\lbrace Y_t \rbrace_{t \in \mathbb{Z}}\)</span> est un processus moyenne mobile q si elle est définie, pour tout <span class="math notranslate nohighlight">\(t \in \mathbb{Z}\)</span>, par:</i></p>
+<div class="math notranslate nohighlight">
+\[
+Y_t = \mu + \sum_{j=1}^{q} \theta_{j} \eta_{t-j}  + \eta_{t}
+\]</div>
+<p>Avec <span class="math notranslate nohighlight">\(\mu \in \mathbb{R}\)</span>, <span class="math notranslate nohighlight">\(\theta  = (\theta_1, \theta_2, \ldots, \theta_q)\in \mathbb{R}^q\)</span> et  <span class="math notranslate nohighlight">\(\eta_{t}  \stackrel{i.i.d}{\sim} (0, \sigma^2)\)</span>.</p>
+<p>On note <span class="math notranslate nohighlight">\(Y_t\)</span> <span class="math notranslate nohighlight">\(\sim\)</span> MA(q)</p>
+</div>
+<div class="admonition-remarque admonition">
+<p class="admonition-title">Remarque</p>
+<p>Par définition, le processus stochastique moyenne mobile MA(q) est toujours causal.</p>
+</div>
+<div class="tip admonition">
+<p class="admonition-title">Proposition</p>
+<p>Soit <span class="math notranslate nohighlight">\(Y_t\)</span> <span class="math notranslate nohighlight">\(\sim\)</span> MA(1) alors :</p>
+<div class="math notranslate nohighlight">
+\[
+\mathbb{E}(Y_t)=\mu~~,~~ Var(Y_t) = \sigma^2 (1+ \theta^2)
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+    \gamma_Y(k) = \sigma^2 (1+\theta^2)\mathbb{1}_{k=0} + \theta \sigma^2 \mathbb{1}_{k=1}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+    \rho_Y(k) = \mathbb{1}_{k=0} +  \dfrac{\theta}{(1+\theta^2)} \mathbb{1}_{k=1}
+\]</div>
+</div>
+<div class="admonition-demonstration admonition">
+<p class="admonition-title">Démonstration</p>
+<p>Soit <span class="math notranslate nohighlight">\(Y_t\)</span> <span class="math notranslate nohighlight">\(\sim\)</span> MA(1) alors :</p>
+<div class="math notranslate nohighlight">
+\[
+    \mathbb{E}(Y_t)= \mathbb{E}(\mu + \theta \eta_{t-1} + \eta_{t})=\mu +  \mathbb{E}(\theta \eta_{t-1}) + \mathbb{E}( \eta_{t}) = \mu
+\]</div>
+<p>Aussi,</p>
+<div class="math notranslate nohighlight">
+\[
+    Var(Y_t)= Var(\mu + \theta \eta_{t-1} + \eta_{t}) =Var(\theta \eta_{t-1}) + Var(\eta_{t}) = \sigma^2 (1+ \theta^2)
+\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \gamma_Y(k)&amp;= Cov(Y_t, Y_{t+k})\\
+    &amp; = Cov(\mu + \theta \eta_{t-1} + \eta_{t} , \mu + \theta \eta_{t+k-1} + \eta_{t+k}) \\
+    &amp; =Cov(\theta \eta_{t-1} + \eta_{t} , \theta \eta_{t+k-1} + \eta_{t+k}) \\
+    &amp;= Cov(\theta \eta_{t-1} , \theta \eta_{t+k-1}) + Cov(\theta \eta_{t-1} , \eta_{t+k}) + Cov(\eta_{t} , \theta \eta_{t+k-1}) + Cov(\eta_{t} , \eta_{t+k}) \\
+    &amp; =\theta^2\mathbb{1}_{k=0} + \theta \sigma^2 \mathbb{1}_{k=1} + \sigma^2\mathbb{1}_{k=0}\\
+    &amp;= \sigma^2 (1+\theta^2)\mathbb{1}_{k=0} + \theta \sigma^2 \mathbb{1}_{k=1}
+\end{split}\]</div>
+<p>Ainsi,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \rho_Y(k) &amp;= \dfrac{\gamma_Y(k)}{\gamma_Y(0)} ~~~~~~~~~~~~~~,~~ \gamma_Y(0) = Var(Y_t) \\
+    &amp; = \mathbb{1}_{k=0} +  \dfrac{\theta}{(1+\theta^2)} \mathbb{1}_{k=1}\\
+    &amp;= 
+    \left\{
+    \begin{array}{ll}
+   1  &amp; \mbox{ , k = 0 }\\
+\dfrac{\theta}{(1+\theta^2)} &amp; \mbox{, k = 1} \\
+0  &amp; \mbox{,Sinon}
+      \end{array}
+\right.
+\end{split}\]</div>
+</div>
+<div class="admonition-proposition admonition">
+<p class="admonition-title">Proposition</p>
+<p>Si <span class="math notranslate nohighlight">\(Y_t\)</span> <span class="math notranslate nohighlight">\(\sim\)</span> MA(2) alors :</p>
+<div class="math notranslate nohighlight">
+\[
+\mathbb{E}(Y_t)=\mu~~,~~ Var(y_t) = \sigma^2 (1+\sum_{j=1}^{q} \theta_{j}^2)
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+    \gamma_Y(k) = \sigma^2 (\theta_k + \sum_{j=1}^{q-k} \theta_{j} \theta_{k+j})\mathbb{1}_{k\in [1,q]}
+\]</div>
+</div>
+<div class="admonition-theoreme admonition">
+<p class="admonition-title">Théorème</p>
+<p>Soit <span class="math notranslate nohighlight">\(Y_t\)</span> <span class="math notranslate nohighlight">\(\sim\)</span> MA(q) alors :</p>
+<div class="math notranslate nohighlight">
+\[
+\mathbb{E}(Y_t)=\mu~~,~~ Var(y_t) = \sigma^2 (1+\sum_{j=1}^{q} \theta_{j}^2)
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+    \gamma_Y(k) = \sigma^2 (\theta_k + \sum_{j=1}^{q-k} \theta_{j} \theta_{k+j})\mathbb{1}_{k\in [1,q]}
+\]</div>
+</div>
+<div class="admonition-theoreme admonition">
+<p class="admonition-title">Théorème</p>
+<p>Si <span class="math notranslate nohighlight">\(\lbrace Y_t \rbrace_{t \in \mathbb{Z}}\)</span> MA(q) alors <span class="math notranslate nohighlight">\(\lbrace Y_t \rbrace_{t \in \mathbb{Z}}\)</span> est nécessairement stationnaire.</p>
+</div>
+<div class="admonition-demonstration admonition">
+<p class="admonition-title">Démonstration</p>
+<p>Soit t <span class="math notranslate nohighlight">\(\in \mathbb{Z}\)</span> and <span class="math notranslate nohighlight">\(\theta_j \in \mathbb{R}\)</span>. Supposons que <span class="math notranslate nohighlight">\(Y_t\)</span> <span class="math notranslate nohighlight">\(\sim\)</span> MA(q) tels que :</p>
+<div class="math notranslate nohighlight">
+\[
+Y_t = \mu + \sum_{j=1}^{q} \theta_{j} \eta_{t-j} + \eta_{t} ~~,~~\eta_{t}  \stackrel{i.i.d}{\sim} (0, \sigma^2)
+\]</div>
+<p>D’où,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \mathbb{E}(Y_t) &amp; = \mathbb{E}( \mu + \sum_{j=1}^{q} \theta_{j} \eta_{t-j} \ + \eta_{t})\\
+    &amp; = \mu + \sum_{j=1}^{q}\theta_{j} \mathbb{E}( \eta_{t-j})  +\mathbb{E}(\eta_{t})\\
+    &amp; = \mu
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+Var(Y_t) &amp; = Var( \mu + \sum_{j=1}^{q} \theta_{j} \eta_{t-j} + \eta_{t})\\
+    &amp; = Var(\sum_{j=1}^{q} \theta_{j} \eta_{t-j}  + \eta_{t})\\
+    &amp; = \sum_{j=1}^{q} \theta_{j}^2Var( \eta_{t-j}) + Var(\eta_{t})\\
+        &amp; = \sigma^2\sum_{j=1}^{q} \theta_{j}^2 + \sigma^2\\
+        &amp; = \sigma^2(1+\sum_{j=1}^{q} \theta_{j}^2)
+\end{split}\]</div>
+<p>Aussi,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\gamma_Y(k) &amp; = Cov( \mu + \sum_{j=1}^{q} \theta_{j} \eta_{t-j} + \eta_{t}~,~ \mu + \sum_{j=1}^{q} \theta_{j} \eta_{t+k-j} + \eta_{t+k})\\
+    &amp; = Cov( \sum_{j=1}^{q} \theta_{j} \eta_{t-j} + \eta_{t}~,~ \sum_{j=1}^{q} \theta_{j} \eta_{t+k-j} + \eta_{t+k})\\
+    &amp; = Cov( \sum_{j=1}^{q} \theta_{j} \eta_{t-j} ~,~ \sum_{j=1}^{q} \theta_{j} \eta_{t+k-j})  + Cov( \sum_{j=1}^{q} \theta_{j} \eta_{t-j} ~,~  + \eta_{t+k})\\ &amp;+ Cov(\eta_{t}~,~ \sum_{j=1}^{q} \theta_{j} \eta_{t+k-j}) + Cov( \eta_{t}~,~ \eta_{t+k}) \\
+    &amp; = 
+\end{split}\]</div>
+<p>Ainsi, si le processus <span class="math notranslate nohighlight">\(\lbrace Y_t \rbrace_{t \in \mathbb{Z}}\)</span> suit un MA(q) alors <span class="math notranslate nohighlight">\(\lbrace Y_t \rbrace_{t \in \mathbb{Z}}\)</span> est nécessairement stationnaire.</p>
+</div>
+</div>
+<div class="section" id="le-processus-autoregressif">
+<h4>5.2. Le processus autorégressif<a class="headerlink" href="#le-processus-autoregressif" title="Lien permanent vers ce titre">¶</a></h4>
+<div class="admonition-definition admonition">
+<p class="admonition-title">Définition</p>
+<p><i>On dit que la série chronologique <span class="math notranslate nohighlight">\(\lbrace Y_t \rbrace_{t \in \mathbb{Z}}\)</span> est un processus autorégressif d’ordre p si elle est définie, pour tout <span class="math notranslate nohighlight">\(t \in \mathbb{Z}\)</span>, par:</i></p>
+<div class="math notranslate nohighlight">
+\[
+Y_t = \mu + \sum_{j=1}^{p} \Phi_{j} Y_{t-j}  + \eta_{t} ~~~~,~~~~ (\forall t \in \mathbb{Z})
+\]</div>
+<p>ou encore :</p>
+<div class="math notranslate nohighlight">
+\[
+    Y_t = \mu + \Phi_{1} Y_{t-1} + \Phi_{2} Y_{t-2} + \ldots + \Phi_{p} Y_{t-p} + \eta_{t}  ~~~,~~~ (\forall t \in \mathbb{Z})
+\]</div>
+<p>Avec <span class="math notranslate nohighlight">\(\mu \in \mathbb{R}\)</span> , <span class="math notranslate nohighlight">\(\Phi  = (\Phi_1, \Phi_2, \ldots, \Phi_p)\in \mathbb{R}^p\)</span> et <span class="math notranslate nohighlight">\(\eta_{t}  \stackrel{i.i.d}{\sim} (0, \sigma^2)\)</span>.</p>
+<p>On note <span class="math notranslate nohighlight">\((Y_t)\)</span> <span class="math notranslate nohighlight">\(\sim\)</span> AR(p).</p>
+</div>
+<div class="admonition-remarque admonition">
+<p class="admonition-title">Remarque</p>
+<p>Par définition, le processus autorégressif AR(p) est toujours inversible.</p>
+</div>
+<div class="admonition-theoreme admonition">
+<p class="admonition-title">Théorème</p>
+<p>Soit <span class="math notranslate nohighlight">\(Y_t\)</span> <span class="math notranslate nohighlight">\(\sim\)</span> AR(p).</p>
+<p>Le processus <span class="math notranslate nohighlight">\((Y_t)\)</span> stationnaire et causal si si les racines du polynôme <span class="math notranslate nohighlight">\(A(z) = 1 − \phi_1z −· · ·- \phi_pz^p\)</span> sont de module strictement supérieur à 1.</p>
+</div>
+<div class="important admonition">
+<p class="admonition-title">Proposition</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    Y_t \sim AR(1) \Rightarrow 
+    \begin{cases}
+     \mathbb{E}(Y_t) =  \dfrac{\mu}{1-\Phi}  \\
+     Var(Y_t) =  \dfrac{\sigma^2}{1-\Phi^2}  \\
+     \gamma_Y(k) = \dfrac{\sigma^2}{1-\Phi^2}\Phi^k ~~,~ k \in \mathbb{N} \\
+     \rho_Y(k) = \Phi^k ~~, ~k \in \mathbb{N}
+    \end{cases}
+\end{split}\]</div>
+</div>
+<div class="admonition-preuve admonition">
+<p class="admonition-title">Preuve</p>
+<p>On considère <span class="math notranslate nohighlight">\((Y_t) \sim AR(1)\)</span>. Ainsi ,</p>
+<div class="math notranslate nohighlight">
+\[
+    Y_t = \mu +  \Phi Y_{t-1}+ \eta_{t}
+\]</div>
+<p>Avec <span class="math notranslate nohighlight">\(|\Phi|&lt;1\)</span>, <span class="math notranslate nohighlight">\(\mu \in \mathbb{R}\)</span> and <span class="math notranslate nohighlight">\(\eta_{t}  \stackrel{i.i.d}{\sim} (0, \sigma^2)\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    Y_t = \mu +  \Phi Y_{t-1}+ \eta_{t} &amp;\Rightarrow
+    Y_{t} - \Phi Y_{t-1}= \mu + \eta_{t}  \\
+        &amp; \Rightarrow Y_{t} -\Phi B Y_{t} = \mu + \eta_{t}  \\
+    &amp; \Rightarrow (1-\Phi B) Y_{t} = \mu + \eta_{t}  \\
+        &amp; \Rightarrow Y_{t} = \sum_{j \geq 0} (\Phi B)^{j} (\mu + \eta_{t})  ~~~,~if ~~ |\Phi|&lt; 1\\
+ &amp; \Rightarrow Y_{t} = \sum_{j \geq 0} (\Phi B)^{j}\mu + \sum_{j \geq 0} (\Phi B)^{j} \eta_{t}  \\
+  &amp; \Rightarrow Y_{t} = \sum_{j \geq 0} (\Phi)^{j}\mu + \sum_{j \geq 0} \Phi^{j} \eta_{t-j}  \\
+    &amp; \Rightarrow Y_{t} = \dfrac{\mu}{1-\Phi} + \sum_{j \geq 0} \Phi^{j} \eta_{t-j}  \\
+\end{split}\]</div>
+<p>Aussi,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \mathbb{E}(Y_t) &amp;=     \mathbb{E}(\dfrac{\mu}{1-\Phi} + \sum_{j \geq 0} \Phi^{j} \eta_{t-j}) = \dfrac{\mu}{1-\Phi} \\
+Var(Y_t) &amp;=  Var(\dfrac{\mu}{1-\Phi} + \sum_{j \geq 0} \Phi^{j} \eta_{t-j}) = \dfrac{\sigma^2}{1-\Phi^2} \\
+     \gamma_Y(k) &amp;= Cov(Y_t, Y_{t+k}) =\dfrac{\sigma^2}{1-\Phi^2}\Phi^k ~~,~ k \in \mathbb{N} \\
+     \rho_Y(k) &amp;= \dfrac{\gamma_Y(k) }{\gamma_Y(0) }\Phi^k ~~, ~k \in \mathbb{N}
+\end{split}\]</div>
+</div>
+<div class="admonition-theoreme admonition">
+<p class="admonition-title">Théorème</p>
+<p>On considère <span class="math notranslate nohighlight">\(\lbrace Y_t \rbrace_{t \in \mathbb{Z}} \sim AR(1)\)</span>. Si <span class="math notranslate nohighlight">\(\Phi = 1\)</span> alors  <span class="math notranslate nohighlight">\(\lbrace Y_t \rbrace_{t \in \mathbb{Z}}\)</span> est un processus non stationnaire</p>
+</div>
+<div class="admonition-preuve admonition">
+<p class="admonition-title">Preuve</p>
+<p>Soit <span class="math notranslate nohighlight">\(\lbrace Y_t \rbrace_{t \in \mathbb{Z}} \sim AR(1)\)</span>.</p>
+<p>On suppose que <span class="math notranslate nohighlight">\(\Phi = 1\)</span>. Alors :</p>
+<p><span class="math notranslate nohighlight">\(Y_t = \mu + \Phi Y_{t-1} + \eta_t = \mu + Y_{t-1} + \eta_t\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+Y_1 &amp; = \mu + Y_{0} + \eta_1  \\
+Y_2 &amp;= \mu + Y_{1} + \eta_{2}  \\
+Y_3 &amp;=  \mu + Y_{2} + \eta_{3} \\
+&amp;  \vdots \\
+Y_t &amp;= \mu + Y_{t-1} +  \eta_{t}\\
+&amp;-------\\
+\sum_{i=1}^t Y_i &amp; = \sum_{i=1}^t \mu + \sum_{i=1}^t Y_{i-1} + \sum_{i=1}^t  \eta_i \\
+\sum_{i=1}^t  Y_i - \sum_{i=1}^t  Y_{i-1} &amp;= \sum_{i=1}^t  \mu + \sum_{i=1}^t  \eta_i \\
+Y_t - Y_{0} &amp;= t \mu + \sum_{i=1}^t  \eta_i \\
+\end{split}\]</div>
+<p>D’où,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\lbrace Y_t \rbrace_{t \in \mathbb{Z}} \sim AR(1) ~~\land~~  \Phi = 1  &amp;\Rightarrow Y_t = t \mu + Y_{0} + \sum_{i=1}^t  \eta_i \\
+&amp;\Rightarrow \mathbb{E}(Y_t) = t \mu + Y_{0} ~~ \land ~~  Var(Y_t) = t\sigma^2\\
+&amp;\Rightarrow \lbrace Y_t \rbrace_{t \in \mathbb{Z}}~~ \mbox{n'est pas un processus stationnaire}
+\end{split}\]</div>
+</div>
+<div class="admonition-definition admonition">
+<p class="admonition-title">Définition</p>
+<p>Soit  <span class="math notranslate nohighlight">\(Y = \lbrace Y_t, t \in \mathbb{Z} \rbrace\)</span>  un processus autoregressive d’ordre 2, AR(2).</p>
+<div class="math notranslate nohighlight">
+\[
+    Y_t = \mu + \Phi_{1} Y_{t-1} + \Phi_{2} Y_{t-2} + \eta_{t}
+\]</div>
+<p>Avec <span class="math notranslate nohighlight">\(\mu \in \mathbb{R}\)</span> , <span class="math notranslate nohighlight">\(\Phi  = (\Phi_1, \Phi_2)\in \mathbb{R}^{2}\)</span> et <span class="math notranslate nohighlight">\(\eta_{t}  \stackrel{i.i.d}{\sim} (0, \sigma^2)\)</span>.</p>
+<p><span class="math notranslate nohighlight">\(Y\)</span> est stationnaire et causal si les racines du polynôme <span class="math notranslate nohighlight">\(A(z) = 1 − \phi_1z − \phi_2z^2\)</span> sont de module strictement supérieur à 1.</p>
+</div>
+<div class="warning admonition">
+<p class="admonition-title">Exemple</p>
+<p>We suppose that the daily return of time series at time t can be expressed as :</p>
+<div class="math notranslate nohighlight">
+\[
+    r_t = 0.5 - 0.2r_{t-1} + 0.48r_{t-2} +\zeta_t  ~~,~~\zeta_{t}  \stackrel{i.i.d}{\sim} (0, \sigma^2)
+\]</div>
+<p>Let <span class="math notranslate nohighlight">\(\zeta_{t}  \stackrel{i.i.d}{\sim} (0, \sigma^2)\)</span> and <span class="math notranslate nohighlight">\(t \in \mathbb{Z}\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+     r_t = 0.5 - 0.2r_{t-1} + 0.48r_{t-2} +\zeta_t  &amp;\Rightarrow       r_t + 0.2r_{t-1} - 0.48r_{t-2} = 0.5 +\zeta_t  \\
+      &amp;\Rightarrow       r_t + 0.2Br_{t} - 0.48B^2r_{t} = 0.5 +\zeta_t  \\
+            &amp;\Rightarrow       (1 + 0.2B - 0.48B^2)r_t = 0.5 +\zeta_t \\
+                        &amp;\Rightarrow       A(B)r_t = 0.5 +\zeta_t 
+\end{split}\]</div>
+<p>Where <span class="math notranslate nohighlight">\(A(z) = (1 + 0.2z - 0.48z^2)\)</span> indicates the autoregressive polynomial. \</p>
+<p>Let’s findings the A’s roots \footnote{It should be recall that the roots for quadratic polynomial <span class="math notranslate nohighlight">\(ax^2+bx+c=0\)</span> are given by the following expression <span class="math notranslate nohighlight">\(\dfrac{-b \pm \sqrt{b^2-4ac}}{2a}\)</span> , if a <span class="math notranslate nohighlight">\(\neq\)</span> 0} by solving the equation A(z)=0. \</p>
+<p>$A(z) = 0 \Rightarrow z_1 = -\dfrac{5}{4} \vee z_2 =\dfrac{5}{3} $\</p>
+<p>Therefore, the return <span class="math notranslate nohighlight">\(\lbrace r_t \rbrace_{t \in \mathbb{Z}}\)</span> is a causal and a strictly stationary process since all A(z) roots are outside the unit circle (i.e. <span class="math notranslate nohighlight">\(|z_j|&gt;1 ~,~ j \in \lbrace  1,2\rbrace )\)</span>.\</p>
+<p>Graphically, the fitted time series can be represented as follows</p>
+</div>
+<div class="warning admonition">
+<p class="admonition-title">Exemple</p>
+<p>Let us consider the following stochastic process :</p>
+<div class="math notranslate nohighlight">
+\[
+    \pi_t = 0.5 + 1.2\pi_{t-1} + 1.2\pi_{t-2} + \eta_t ~~,~~ t \in \mathbb{Z}
+\]</div>
+<p>Where <span class="math notranslate nohighlight">\(\eta_t\)</span> is the usual white noise process.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+        \pi_t = 0.5 + 1.2\pi_{t-1} + 1.2\pi_{t-2} + \eta_t &amp;\Rightarrow         \pi_t -1.2 \pi_{t-1} - 1.2\pi_{t-2}= 0.5  + \eta_t \\
+        &amp;\Rightarrow         (1-1.2B - 1.2B^2)\pi_t = 0.5  + \eta_t \\
+                &amp;\Rightarrow         A(B)\pi_t = 0.5  + \eta_t
+\end{split}\]</div>
+<p>Thus, the characteristic equation is given by <span class="math notranslate nohighlight">\(A(z) = 1-1.2z - 1.2z^2= 0\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    \Delta_A &gt; 0 &amp;\Rightarrow z_1 = -\dfrac{3+\sqrt{39}}{4} \approx-1.54 \vee z_2= \dfrac{-3+\sqrt{39}}{4}\approx0.54 \\
+    &amp;\Rightarrow \exists ~ (i \in \lbrace 1, 2 \rbrace) ~;~ |z_i| &lt;  1 \\
+    &amp;\Rightarrow \lbrace \pi_t , t \in \mathbb{Z}\rbrace ~~ explosive 
+\end{split}\]</div>
+</div>
+<p>Graphically, figure \ref{fig3l} shows the inverse roots of our time series within the unit circle. Indeed, at least one of its real is roots <span class="math notranslate nohighlight">\(z_1\approx -1.54\)</span> , <span class="math notranslate nohighlight">\(z_2\approx 0.54\)</span> is outside the unit circle which means the process is explosive (non stationary).</p>
+<div class="admonition-theoreme admonition">
+<p class="admonition-title">Théorème</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    Y_t \sim AR(2) \Rightarrow 
+    \begin{cases}
+     \mathbb{E}(Y_t) &amp;= \dfrac{\mu}{1-\Phi_1 - \Phi_2} \\
+     Var(Y_t) &amp; =\dfrac{\sigma^2}{1-\Phi_1 \rho_Y(1)- \Phi_2 \rho_Y(2)}\\
+     \gamma_Y(k) &amp; =\Phi_1 \rho_Y(k-1)+ \Phi_2 \rho_Y(k-2) ~~,~~ k \in \mathbb{N}^{*}
+    \end{cases}
+\end{split}\]</div>
+</div>
+<div class="admonition-theoreme admonition">
+<p class="admonition-title">Théorème</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+    Y_t \sim AR(p) \Rightarrow 
+    \begin{cases}
+     \mathbb{E}(Y_t) = \dfrac{\mu}{1-\Phi_1 - \Phi_2 -\ldots - \Phi_p} &amp; \\
+     Var(Y_t) = &amp; \\
+     \gamma_Y(k) = 
+    \end{cases}
+\end{split}\]</div>
+</div>
+</div>
+<div class="section" id="autoregressive-moving-average-model">
+<h4>5.3. Autoregressive moving average model<a class="headerlink" href="#autoregressive-moving-average-model" title="Lien permanent vers ce titre">¶</a></h4>
+<div class="admonition-definition admonition">
+<p class="admonition-title">Définition</p>
+<p>An Auto Regressive Moving Average (ARMA) model of p and q orders is a combination of the Auto-Regressive (AR) model and Moving Average (MA) one ~\cite{b2}.</p>
+</div>
+<div class="admonition-definition admonition">
+<p class="admonition-title">Définition</p>
+<p>Mathematically, an ARMA(p,q) process takes the following form:</p>
+<div class="math notranslate nohighlight">
+\[
+y_t = \mu + \sum_{j=1}^{p} \Phi_{j} y_{t-j} + \sum_{j=1}^{q} \theta_j \eta_{t-j} + \eta_{t}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+y_t -  \underbrace{\Phi_1y_{t-1} - \ldots - \Phi_py_{t-p}}_{AR(p)~ part} = \underbrace{\mu + \theta_1\eta_{t-1} + \ldots + \theta_{q}\eta_{t-q} + \eta_{t}}_{MA(q) ~ part}
+\]</div>
+<p>Where :</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\eta_t\)</span> refers to the white noise series such as <span class="math notranslate nohighlight">\(\eta_t\)</span> <span class="math notranslate nohighlight">\(\sim\)</span> WN (0 , <span class="math notranslate nohighlight">\(\sigma^2\)</span>).</p></li>
+<li><p><span class="math notranslate nohighlight">\(\Phi_1, \Phi_2, \ldots \Phi_p \)</span> represent the coefficients of the moving average model.</p></li>
+<li><p><span class="math notranslate nohighlight">\(\theta_1, \theta_2, \ldots \theta_q \)</span> represent the coefficients of the autoregressive model.</p></li>
+<li><p><span class="math notranslate nohighlight">\(\mu\)</span> <span class="math notranslate nohighlight">\(\in\)</span> <span class="math notranslate nohighlight">\(\mathbb{R}\)</span> represents the constant term.</p></li>
+<li><p>t indexes time i.e (t <span class="math notranslate nohighlight">\(\in\)</span> <span class="math notranslate nohighlight">\(\mathbb{Z}^{*+}\)</span>)</p></li>
+</ul>
+</div>
+<p>Therefore, implying a reduced form by using the backward shift operator (B), we can write :</p>
+<div class="math notranslate nohighlight">
+\[
+\Phi_p (B)y_t = \Theta_q(B)\eta_t
+\]</div>
+<p>Where</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+      \begin{cases}
+      B^{k}y_{t} =y_{t-k} ~ , ~~~ \forall ~~ k \in \mathbb{N} \\
+\Phi(B) = 1- \Phi_1 B - \Phi_2 B^2 - \ldots - \Phi_p B^p \\
+\Theta(B) = 1- \theta_1 B - \theta_2 B^2 - \ldots - \theta_q B^q
+	\end{cases}
+\end{split}\]</div>
+<p>The ARMA models assume the stationary of the time series ~\cite{b3}.</p>
+<div class="admonition-exemples admonition">
+<p class="admonition-title">Exemples</p>
+<p>Here are some examples of ARMA models</p>
+<ul class="simple">
+<li><p>ARMA(1,0)= AR(1) :</p></li>
+</ul>
+<p><span class="math notranslate nohighlight">\(\Phi_1 (B)y_t = \Theta_1(B)\eta_t  \Leftrightarrow y_t = \Phi_1 y_{t-1}\)</span></p>
+<ul class="simple">
+<li><p>ARMA(0,1)= MA(1) :</p></li>
+</ul>
+<p><span class="math notranslate nohighlight">\(\Phi_1 (B)y_t = \Theta_1(B)\eta_t  \Leftrightarrow y_t = \Theta_1\eta_{t-1} + \eta_t \)</span>.</p>
+<ul class="simple">
+<li><p>ARMA(1,1) :</p></li>
+</ul>
+<p><span class="math notranslate nohighlight">\(\Phi_1 (B)y_t = \Theta_1(B)\eta_t  \Leftrightarrow y_t = \Phi_1 y_{t-1} + \Theta_1\eta_{t-1} + \eta_t \)</span>.</p>
+<ul class="simple">
+<li><p>ARMA(2,1) :</p></li>
+</ul>
+<p><span class="math notranslate nohighlight">\(\Phi_2 (B)y_t = \Theta_1(B)\eta_t  \Leftrightarrow y_t = \Phi_1 y_{t-1} + \Phi_2 y_{t-2} + \theta_1\eta_{t-1} + \eta_t \)</span>.</p>
+<ul class="simple">
+<li><p>ARMA(1,2) :</p></li>
+</ul>
+<p><span class="math notranslate nohighlight">\(\Phi_1 (B)y_t = \Theta_2(B)\eta_t  \Leftrightarrow y_t =  \Phi_1 y_{t-1}+ \theta_2 \eta_{t-2} + \theta_1\eta_{t-1} + \eta_t \)</span>.</p>
+<ul class="simple">
+<li><p>ARMA(2,2) :</p></li>
+</ul>
+<p><span class="math notranslate nohighlight">\(\Phi_2 (B)y_t = \Theta_2(B)\eta_t  \Leftrightarrow y_t = \Phi_1 y_{t-1}+ \Phi_2 y_{t-2} + \theta_2 \eta_{t-2} + \theta_1\eta_{t-1} + \eta_t \)</span></p>
+</div>
+<div class="admonition-remarque admonition">
+<p class="admonition-title">Remarque</p>
+<p>It should be noticed that :</p>
+<ul class="simple">
+<li><p>When q = 0 then ARMA(p,0) <span class="math notranslate nohighlight">\(\equiv	\)</span> AR(p):</p></li>
+</ul>
+<p><span class="math notranslate nohighlight">\(y_t = \Phi_1y_{t-1} + \Phi_2y_{t-2} + \ldots + \Phi_py_{t-p}\)</span></p>
+<ul class="simple">
+<li><p>When p = 0 then ARMA(0,q) <span class="math notranslate nohighlight">\(\equiv	\)</span> MA(q):</p></li>
+</ul>
+<p><span class="math notranslate nohighlight">\(y_t = \theta_1\eta_{t-1} + \theta_2\eta_{t-2} + \ldots + \theta_q\eta_{t-q} + \eta_t\)</span></p>
+</div>
+<div class="admonition-exemple admonition">
+<p class="admonition-title">Exemple</p>
+<p>Let <span class="math notranslate nohighlight">\(X_t\)</span> be an ARMA(2,2) process such as <span class="math notranslate nohighlight">\(\Phi_1= 3\)</span>, <span class="math notranslate nohighlight">\(\Phi_2= 6\)</span>, <span class="math notranslate nohighlight">\(\theta_1=-\dfrac{14}{3}\)</span> and <span class="math notranslate nohighlight">\(\theta_1=5\)</span>. Let’s check the causality ?.\
+The process can be written as :</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+        X_t -3X_{t-1}-6X_{t-2} &amp;= \eta_t -\dfrac{14}{3}\eta_{t-1} + 5\eta_{t-2} ~~ , ~~~ \eta_t \sim WN (0 , \sigma^2) \\
+(1 -3B-6B^2)X_t &amp;= (1 -\dfrac{14}{3}B + 5B^2)\eta_t ~~ , ~~~ \eta_t \sim WN (0 , \sigma^2)
+\end{align*}
+ $X_t$ can be re-exporessed in factored form as follows :
+ \begin{align*}
+(1 -2L)(1-3L)X_t &amp;= (1 -3L)(1-\dfrac{14}{3})\eta_t ~~ , ~~~ \eta_t \sim WN (0 , \sigma^2) \\
+(1 -2L)X_t &amp;= (1-\dfrac{14}{3})\eta_t ~~ , ~~~ \eta_t \sim WN (0 , \sigma^2)
+\end{split}\]</div>
+<p>Therefore, <span class="math notranslate nohighlight">\(X_t\)</span> is a causal and stationary ARMA(2,2) (the roots of the associated characteristic polynomial are superior than one) with :</p>
+<div class="math notranslate nohighlight">
+\[
+  X_t = 2y_{t-1} +\eta_t -\dfrac{14}{3}\eta_t ~ , ~ \eta_t \sim WN (0 , \sigma^2)  
+\]</div>
+<p>Since it was highly over parametrized and it is now carefully parametrized as an ARMA(1,1) process.</p>
+</div>
+<div class="admonition-remark admonition">
+<p class="admonition-title">Remark</p>
+<p>In order to identify the MA(q) and AR(p) process, it is very suitable to use the ACF and PACF respectively.</p>
+</div>
+</div>
+<div class="section" id="autoregressive-integrated-moving-average-model">
+<h4>5.4. Autoregressive integrated moving average model<a class="headerlink" href="#autoregressive-integrated-moving-average-model" title="Lien permanent vers ce titre">¶</a></h4>
+<div class="admonition-definition admonition">
+<p class="admonition-title">Définition</p>
+<p>An ARIMA(p,d,q) takes the following form</p>
+<div class="math notranslate nohighlight">
+\[
+\nabla^dy_t = (1-B)^dy_{t} ~~~~ , \forall t \in \mathbb{Z}^{*+}
+\]</div>
+<p>Or</p>
+<div class="math notranslate nohighlight">
+\[
+( 1- \Phi_1 B - \Phi_2 B^2 - \ldots - \Phi_p B^p ) \nabla^dy_t= (1- \theta_1 B - \theta_2 B^2 - \ldots - \theta_q B^q)\eta_t
+\]</div>
+<p>Where :</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\nabla\)</span> refers  to the difference operator</p></li>
+<li><p>d refers to a positive integer ( d <span class="math notranslate nohighlight">\(\in\)</span> <span class="math notranslate nohighlight">\(\mathbf{N}\)</span>)</p></li>
+<li><p>The process <span class="math notranslate nohighlight">\(y_t\)</span> follows an ARMA(p,q).</p></li>
+</ul>
+</div>
+<div class="admonition-remarque admonition">
+<p class="admonition-title">Remarque</p>
+<p>Based on the definition above, it clearly seems that the ARIMA models are the extension of the ARMA ones.</p>
+</div>
+<div class="admonition-lemma admonition">
+<p class="admonition-title">Lemma</p>
+<p>Let <span class="math notranslate nohighlight">\(\lbrace y_t \rbrace_{t \in \mathbb{Z}^{*+}}\)</span> be a stochastic process. If <span class="math notranslate nohighlight">\(y_t\)</span>  follows an ARIMA(p,d,q) thus it can be expressed as :</p>
+</div>
+<div class="math notranslate nohighlight">
+\[
+    \Phi_p (B)(1-B)^{d}y_t = \Theta_q(B)\eta_t ~~ , ~~~ \eta_t \sim WN (0 , \sigma^2)
+\]</div>
+<p>Hence, \
+<span class="math notranslate nohighlight">\(\nabla^dy_t = (1-B)^dy_{t}\)</span> will be a stationary ARMA(p,q)</p>
+</div>
+</div>
+<div class="section" id="prevision-des-series-temporelles">
+<h3>6. Prévision des séries temporelles<a class="headerlink" href="#prevision-des-series-temporelles" title="Lien permanent vers ce titre">¶</a></h3>
+<div class="section" id="naive-forecast">
+<h4>6.1. Naive forecast<a class="headerlink" href="#naive-forecast" title="Lien permanent vers ce titre">¶</a></h4>
+</div>
+<div class="section" id="simple-average">
+<h4>6.2. Simple average<a class="headerlink" href="#simple-average" title="Lien permanent vers ce titre">¶</a></h4>
+</div>
+<div class="section" id="algorithme-de-box-jenkins">
+<h4>6.3. Algorithme de Box &amp; Jenkins<a class="headerlink" href="#algorithme-de-box-jenkins" title="Lien permanent vers ce titre">¶</a></h4>
+<div class="admonition-algorithme-de-box-jenkins admonition">
+<p class="admonition-title">Algorithme de Box &amp; Jenkins</p>
+<p>Cette méthodologie suggère une procédure à quatre étapes :</p>
+<ul class="simple">
+<li><p>Identification du processus : Déterminer à partir de l’observation des fonctions d’autocorrélation simple et partielle dans la famille des modèles de types ARMA (p, q) le modèle adéquat.</p></li>
+<li><p>Estimation des coefficients des modèles séléctionnés</p></li>
+<li><p>Validation du modèle (Test de diagnostique des résidus) : les résidus doivent être autocorrélés et ne présentent pas d’hétéroscédasticité.</p></li>
+<li><p>Prévision à l’horizon h</p></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section" id="modelling-time-process">
+<h3>Modelling time process<a class="headerlink" href="#modelling-time-process" title="Lien permanent vers ce titre">¶</a></h3>
+<p>The main challenge in modeling a stochastic process is to find the appropriate  generated process based on historical data information. To do this, we can imply the ARMA procedure.</p>
+<div class="admonition-proposition admonition">
+<p class="admonition-title">Proposition</p>
+<p>Let <span class="math notranslate nohighlight">\(y_t \sim ARIMA(p,d,q)\)</span>.</p>
+<p>ARIMA orders p  and q are determined by the mean of statistical and graphical model selection criteria, such as the Bayesian information criterion (BIC), Schwarz Information Criterion (SIC), and Hannan-Quinn criterion (HQC) or either the Akaike Information Criterion (AIC).</p>
+</div>
+<div class="admonition-box-jenkins-algorithm admonition">
+<p class="admonition-title">Box-Jenkins algorithm</p>
+<p>Step 1:  Plot the time series to observe any unusual behavior  and  to find out if it is stationary or not.</p>
+<p>Step 2 : Difference target time series if non-stationary</p>
+<p>Step 3 : Model identification</p>
+<p>To choose the model specification ARIMA(p, d, q), we start by examining the stationarity and seasonality of our target series by using algebraic or graphical procedures. Then, we can determine the orders p and q by using the ACF and PACF functions.</p>
+<p>Step 4 : Parameter estimation</p>
+<p>To determine parameter estimation, we can imply the maximum likelihood or the least squares approach</p>
+<p>Step 5 :Diagnostic checking</p>
+<p>To check whether the model specified is adequate, we can use diagnostic residuals checking
+Evaluate the fitted model</p>
+<p>Step 6 : Selected Model’s based on minimum BIC and AIC values, and pick up the best one.
+Selected Models’ use in terms of explaining and forecasting.</p>
+<p>Step 7 : Draw ACF plot of residuals. Is it look like a white noise term? If yes, forecast. If not, go to step 2</p>
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./serieschronoavancees\book"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      Par Prof. Jouilil Youness<br/>
+    
+        &copy; droits d'auteur 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
